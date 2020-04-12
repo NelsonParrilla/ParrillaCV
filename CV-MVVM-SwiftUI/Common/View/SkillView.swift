@@ -19,7 +19,7 @@ struct SkillView: View {
             Text(text)
                 .fontWeight(.bold)
             Spacer()
-                .frame(height: 8.0)
+                .frame(height: 0.0)
             Slider(value: .constant(value))
                 .padding(.horizontal, 50.0)
         }

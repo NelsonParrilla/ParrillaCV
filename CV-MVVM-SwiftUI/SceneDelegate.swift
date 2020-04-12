@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Create the SwiftUI view that provides the window contents.
         let dependencyContainer = DependencyContainer()
         let viewModel = MainViewModel(factory: dependencyContainer.makeMainFactory() as! MainFactory)
-        let mainView = MainView(viewModel: viewModel, address: .constant(""))
+        let mainView = MainView(viewModel: viewModel)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
