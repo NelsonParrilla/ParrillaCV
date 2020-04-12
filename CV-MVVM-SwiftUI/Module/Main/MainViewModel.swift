@@ -16,13 +16,15 @@ protocol MainViewModelInterface {
 
 class MainViewModel: ObservableObject, MainViewModelInterface {
     
-    @Published var CVDatas: CV?
-    
-    @Published var imageURL = URL(string:"test")
+    @Published var CVDatas = CV(image: defaultImage, role: "", adresse: "", phone: "", email: "", skills: [], professionalExp: [], associative: "", sport: "", languages: "", projects: "")
+        
+    @Published var isDataLoaded = false
 
     let factory: MainFactoryInterface
     
     lazy var serverAPI: MainServerAPIClient = factory.makeServerAPI()
+    
+    static let defaultImage = "https://www.eastcottvets.co.uk/uploads/Animals/gingerkitten.jpg"
 
     init(factory: MainFactoryInterface) {
         
@@ -33,8 +35,10 @@ class MainViewModel: ObservableObject, MainViewModelInterface {
     func getCV() {
         
         serverAPI.getCV() { result in
+            
+            self.isDataLoaded = true
+            
             switch result {
-                
             case .success(let cv):
                 self.CVDatas = cv
                 break

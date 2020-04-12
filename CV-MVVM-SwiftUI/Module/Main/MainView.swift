@@ -9,38 +9,23 @@
 import SwiftUI
 
 struct MainView: View {
-        
+    
     @ObservedObject var viewModel: MainViewModel
-    
-    @Binding var address: String
-    
-    static let defaultImage = "https://www.eastcottvets.co.uk/uploads/Animals/gingerkitten.jpg"
-    
+        
     var body: some View {
         NavigationView{
             
             ZStack {
                 Color("LightBlue").edgesIgnoringSafeArea(.all)
                 
-                // Your other content here
-                // Other layers will respect the safe area edges
-                
                 VStack {
-                    /*Image(uiImage: <#T##UIImage#>)
-                    ImageViewContainer(imageURL: viewModel.CVDatas?.image)*/
-                    //Text("tesrtsdf")
-                    ImageView(withURL: viewModel.CVDatas?.image ?? MainView.defaultImage)
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 200.0, height: 200.0)
-                    .cornerRadius(100)
-                    ForEach(viewModel.CVDatas?.skills ?? [], id: \.self) { skill in
-                        SkillView(text: skill.techno, value: Float(skill.value) / 100)
-                    }
                     Spacer()
-
-                }
+                        .frame(height: 120.0)
+                    PersonnalInfosView(viewModel: viewModel)
+                    Spacer()
+                }.edgesIgnoringSafeArea([.top, .bottom])
+                
             }
-            
         }
         
     }
@@ -53,6 +38,15 @@ struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         let dependencyContainer = DependencyContainer()
         let viewModel = MainViewModel(factory: dependencyContainer.makeMainFactory() as! MainFactory)
-        return MainView(viewModel: viewModel, address: .constant(""))
+        
+        if let path = Bundle.main.path(forResource: "getCVMock", ofType: "json") {
+            do {
+                let decoder = JSONDecoder()
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                viewModel.CVDatas = try decoder.decode(CV.self, from: data)
+            } catch { fatalError("No getCVMock file") }
+        }
+        
+        return MainView(viewModel: viewModel)
     }
 }
