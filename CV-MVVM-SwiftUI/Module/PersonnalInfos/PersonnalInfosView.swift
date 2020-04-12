@@ -18,7 +18,9 @@ struct PersonnalInfosView: View {
             ImageView(withURL: viewModel.CVDatas.image)              .aspectRatio(contentMode: .fill)
                 .frame(width: 150.0, height: 150.0)
                 .cornerRadius(100)
-                .shadow(color: Color(.sRGB, white: 0, opacity: 0.3), radius: 5, x: 0, y: 5)
+                .shadow(color: Color(.sRGB, white: 0, opacity: 0.3), radius: 5, x: 0, y: 5).onTapGesture {
+                    self.viewModel.state = .work
+            }
             
             
             Text("Nelson PARRILLA")
@@ -33,7 +35,6 @@ struct PersonnalInfosView: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 20.0, height: 20.0)
                     Text(viewModel.CVDatas.phone).font(.system(size: 12))
-                    
                 }
                 
                 HStack {
@@ -41,7 +42,6 @@ struct PersonnalInfosView: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 20.0, height: 20.0)
                     Text(viewModel.CVDatas.email).font(.system(size: 12))
-                    
                 }
                 
                 HStack {
@@ -49,8 +49,6 @@ struct PersonnalInfosView: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 20.0, height: 20.0)
                     Text(viewModel.CVDatas.adresse).font(.system(size: 12))
-                    
-                    
                 }.fixedSize()
             }
             .padding(.leading, -110.0)

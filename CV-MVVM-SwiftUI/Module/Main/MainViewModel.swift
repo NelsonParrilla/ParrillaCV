@@ -19,6 +19,8 @@ class MainViewModel: ObservableObject, MainViewModelInterface {
     @Published var CVDatas = CV(image: defaultImage, role: "", adresse: "", phone: "", email: "", skills: [], professionalExp: [], associative: "", sport: "", languages: "", projects: "")
         
     @Published var isDataLoaded = false
+    
+    @Published var state = MainViewState.personnalInfos
 
     let factory: MainFactoryInterface
     

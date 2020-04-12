@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -34,6 +34,9 @@
 		B789CE94243505DC007F6E49 /* ProfessionalExp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B789CE93243505DC007F6E49 /* ProfessionalExp.swift */; };
 		B78A33802430D33500628682 /* MainFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A337F2430D33500628682 /* MainFactory.swift */; };
 		B7F974AB24158DAC001B1A5A /* CV.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F974AA24158DAC001B1A5A /* CV.swift */; };
+		C506A43F24436C2700FF5D50 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = C506A43E24436C2700FF5D50 /* SwiftUIX */; };
+		C506A44124436E3A00FF5D50 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506A44024436E3A00FF5D50 /* TabBarView.swift */; };
+		C506A44324436F0F00FF5D50 /* MainViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506A44224436F0F00FF5D50 /* MainViewState.swift */; };
 		C56B9A05244339BB0005FB03 /* getCVMock.json in Resources */ = {isa = PBXBuildFile; fileRef = C56B9A04244339BB0005FB03 /* getCVMock.json */; };
 		C56B9A082443420B0005FB03 /* PersonnalInfosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56B9A072443420B0005FB03 /* PersonnalInfosView.swift */; };
 /* End PBXBuildFile section */
@@ -91,6 +94,8 @@
 		B789CE93243505DC007F6E49 /* ProfessionalExp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalExp.swift; sourceTree = "<group>"; };
 		B78A337F2430D33500628682 /* MainFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFactory.swift; sourceTree = "<group>"; };
 		B7F974AA24158DAC001B1A5A /* CV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CV.swift; sourceTree = "<group>"; };
+		C506A44024436E3A00FF5D50 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		C506A44224436F0F00FF5D50 /* MainViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewState.swift; sourceTree = "<group>"; };
 		C56B9A04244339BB0005FB03 /* getCVMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getCVMock.json; sourceTree = "<group>"; };
 		C56B9A072443420B0005FB03 /* PersonnalInfosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnalInfosView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C506A43F24436C2700FF5D50 /* SwiftUIX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +267,7 @@
 		B7873FB72412CFF600E8F87D /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C506A44024436E3A00FF5D50 /* TabBarView.swift */,
 				B7873FBB2412CFF600E8F87D /* AnyGestureRecognizer.swift */,
 				B7873FBA2412CFF600E8F87D /* HostingViewController.swift */,
 				B7873FBE2412CFF600E8F87D /* NavigationConfigurator.swift */,
@@ -283,6 +290,7 @@
 			children = (
 				B7873FA82412CFF500E8F87D /* MainView.swift */,
 				B7873FA72412CFF500E8F87D /* MainViewModel.swift */,
+				C506A44224436F0F00FF5D50 /* MainViewState.swift */,
 				B7F974B524158F0B001B1A5A /* Models */,
 			);
 			path = Main;
@@ -331,6 +339,7 @@
 			);
 			name = "CV-MVVM-SwiftUI";
 			packageProductDependencies = (
+				C506A43E24436C2700FF5D50 /* SwiftUIX */,
 			);
 			productName = "MVVM-SwiftUI";
 			productReference = B7873F692412CF9100E8F87D /* CV-MVVM-SwiftUI.app */;
@@ -405,6 +414,7 @@
 			);
 			mainGroup = B7873F602412CF9100E8F87D;
 			packageReferences = (
+				C506A43D24436C2700FF5D50 /* XCRemoteSwiftPackageReference "SwiftUIX" */,
 			);
 			productRefGroup = B7873F6A2412CF9100E8F87D /* Products */;
 			projectDirPath = "";
@@ -458,6 +468,7 @@
 				B789CE94243505DC007F6E49 /* ProfessionalExp.swift in Sources */,
 				B7F974AB24158DAC001B1A5A /* CV.swift in Sources */,
 				B78A33802430D33500628682 /* MainFactory.swift in Sources */,
+				C506A44324436F0F00FF5D50 /* MainViewState.swift in Sources */,
 				B7873FDA2412CFF600E8F87D /* Location.swift in Sources */,
 				B7873FC92412CFF600E8F87D /* MainViewModel.swift in Sources */,
 				C56B9A082443420B0005FB03 /* PersonnalInfosView.swift in Sources */,
@@ -470,6 +481,7 @@
 				B7873FC72412CFF600E8F87D /* MainServerAPIClient.swift in Sources */,
 				B7873FDD2412CFF600E8F87D /* SceneDelegate.swift in Sources */,
 				B789CE92243505A1007F6E49 /* Skill.swift in Sources */,
+				C506A44124436E3A00FF5D50 /* TabBarView.swift in Sources */,
 				B75FFCC9243CECDD004EB6CE /* SkillView.swift in Sources */,
 				B7873FD82412CFF600E8F87D /* NavigationConfigurator.swift in Sources */,
 				B7873FE82412D7CF00E8F87D /* ColorPalette.swift in Sources */,
@@ -806,6 +818,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C506A43D24436C2700FF5D50 /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUIX/SwiftUIX";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C506A43E24436C2700FF5D50 /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C506A43D24436C2700FF5D50 /* XCRemoteSwiftPackageReference "SwiftUIX" */;
+			productName = SwiftUIX;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B7873F612412CF9100E8F87D /* Project object */;
 }

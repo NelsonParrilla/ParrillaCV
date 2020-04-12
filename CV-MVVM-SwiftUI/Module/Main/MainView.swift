@@ -6,13 +6,14 @@
 //  Copyright © 2020 parrilla nelson. All rights reserved.
 //
 
-import SwiftUI
+import SwiftUIX
 
 struct MainView: View {
     
     @ObservedObject var viewModel: MainViewModel
-        
+            
     var body: some View {
+        
         NavigationView{
             
             ZStack {
@@ -20,9 +21,15 @@ struct MainView: View {
                 
                 VStack {
                     Spacer()
-                        .frame(height: 120.0)
+                        .frame(height: CGFloat(120.0))
                     PersonnalInfosView(viewModel: viewModel)
                     Spacer()
+                }.edgesIgnoringSafeArea([.top, .bottom]).hidden((!viewModel.isDataLoaded) || (viewModel.state != .personnalInfos))
+                
+                VStack {
+                    EmptyView()
+                    TabBarView(state: $viewModel.state)
+
                 }.edgesIgnoringSafeArea([.top, .bottom])
                 
             }
