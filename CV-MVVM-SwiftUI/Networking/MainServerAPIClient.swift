@@ -29,6 +29,8 @@ extension ServerAPIClient: MainServerAPIClient {
             case .success(let data):
                 let decoder = JSONDecoder()
                 do {
+                    let string1 = String(data: data, encoding: String.Encoding.utf8) ?? "Data could not be printed"
+                    print("voici la reponse :\(string1)")
                     let response = try decoder.decode(CV.self, from: data)
                     then(.success(response))
                     

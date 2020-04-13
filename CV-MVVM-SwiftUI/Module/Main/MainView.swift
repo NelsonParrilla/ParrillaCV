@@ -6,25 +6,32 @@
 //  Copyright © 2020 parrilla nelson. All rights reserved.
 //
 
-import SwiftUI
+import SwiftUIX
 
 struct MainView: View {
     
     @ObservedObject var viewModel: MainViewModel
-        
+            
     var body: some View {
+        
         NavigationView{
             
             ZStack {
-                Color("LightBlue").edgesIgnoringSafeArea(.all)
+                
+                NavigationLink(destination: ExperienceInfosView(viewModel: viewModel), isActive: $viewModel.isExpInfosVisible) {
+                    Color("MediumBlue").edgesIgnoringSafeArea(.all)
+                }
+                
+                Color("MediumBlue").edgesIgnoringSafeArea(.all)
                 
                 VStack {
                     Spacer()
-                        .frame(height: 120.0)
+                        .frame(height: 128.0)
                     PersonnalInfosView(viewModel: viewModel)
-                    Spacer()
-                }.edgesIgnoringSafeArea([.top, .bottom])
-                
+                }
+                    .edgesIgnoringSafeArea([.top, .bottom])
+                .hidden((!viewModel.isDataLoaded) || (viewModel.state != .personnalInfos))
+
             }
         }
         
@@ -33,7 +40,6 @@ struct MainView: View {
 }
 
 struct MainView_Previews: PreviewProvider {
-    @State var test: String
     
     static var previews: some View {
         let dependencyContainer = DependencyContainer()

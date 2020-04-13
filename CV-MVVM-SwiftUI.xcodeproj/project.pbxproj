@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -33,9 +33,15 @@
 		B789CE92243505A1007F6E49 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = B789CE91243505A1007F6E49 /* Skill.swift */; };
 		B789CE94243505DC007F6E49 /* ProfessionalExp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B789CE93243505DC007F6E49 /* ProfessionalExp.swift */; };
 		B78A33802430D33500628682 /* MainFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A337F2430D33500628682 /* MainFactory.swift */; };
+		B7DF11F724447809004F1600 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = B7DF11F624447809004F1600 /* SwiftUIX */; };
 		B7F974AB24158DAC001B1A5A /* CV.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F974AA24158DAC001B1A5A /* CV.swift */; };
+		C506A44124436E3A00FF5D50 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506A44024436E3A00FF5D50 /* TabBarView.swift */; };
+		C506A44324436F0F00FF5D50 /* MainViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506A44224436F0F00FF5D50 /* MainViewState.swift */; };
 		C56B9A05244339BB0005FB03 /* getCVMock.json in Resources */ = {isa = PBXBuildFile; fileRef = C56B9A04244339BB0005FB03 /* getCVMock.json */; };
 		C56B9A082443420B0005FB03 /* PersonnalInfosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56B9A072443420B0005FB03 /* PersonnalInfosView.swift */; };
+		C5CCC7D224449A66004AD2B2 /* ExperienceInfosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CCC7D124449A66004AD2B2 /* ExperienceInfosView.swift */; };
+		C5F57420244483C50000B822 /* WorkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F5741F244483C50000B822 /* WorkView.swift */; };
+		C5F57424244486980000B822 /* WorkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F57423244486980000B822 /* WorkDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,8 +97,13 @@
 		B789CE93243505DC007F6E49 /* ProfessionalExp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalExp.swift; sourceTree = "<group>"; };
 		B78A337F2430D33500628682 /* MainFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFactory.swift; sourceTree = "<group>"; };
 		B7F974AA24158DAC001B1A5A /* CV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CV.swift; sourceTree = "<group>"; };
+		C506A44024436E3A00FF5D50 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		C506A44224436F0F00FF5D50 /* MainViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewState.swift; sourceTree = "<group>"; };
 		C56B9A04244339BB0005FB03 /* getCVMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getCVMock.json; sourceTree = "<group>"; };
 		C56B9A072443420B0005FB03 /* PersonnalInfosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnalInfosView.swift; sourceTree = "<group>"; };
+		C5CCC7D124449A66004AD2B2 /* ExperienceInfosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceInfosView.swift; sourceTree = "<group>"; };
+		C5F5741F244483C50000B822 /* WorkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkView.swift; sourceTree = "<group>"; };
+		C5F57423244486980000B822 /* WorkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7DF11F724447809004F1600 /* SwiftUIX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,14 +139,6 @@
 				B7205166243A4BB200ABE160 /* ImageLoader.swift */,
 			);
 			path = Image;
-			sourceTree = "<group>";
-		};
-		B75FFCC7243CEC9E004EB6CE /* View */ = {
-			isa = PBXGroup;
-			children = (
-				B75FFCC8243CECDD004EB6CE /* SkillView.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		B7873F602412CF9100E8F87D = {
@@ -210,8 +214,10 @@
 		B7873FA42412CFF500E8F87D /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				C5F5741E244483AF0000B822 /* Work */,
 				C56B9A06244341FA0005FB03 /* PersonnalInfos */,
 				B7F974B424158F05001B1A5A /* Main */,
+				C5CCC7D024449A3F004AD2B2 /* ExperienceInfos */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -261,11 +267,11 @@
 		B7873FB72412CFF600E8F87D /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C506A44024436E3A00FF5D50 /* TabBarView.swift */,
 				B7873FBB2412CFF600E8F87D /* AnyGestureRecognizer.swift */,
 				B7873FBA2412CFF600E8F87D /* HostingViewController.swift */,
 				B7873FBE2412CFF600E8F87D /* NavigationConfigurator.swift */,
 				B75FFCC6243CEC93004EB6CE /* Image */,
-				B75FFCC7243CEC9E004EB6CE /* View */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -283,6 +289,7 @@
 			children = (
 				B7873FA82412CFF500E8F87D /* MainView.swift */,
 				B7873FA72412CFF500E8F87D /* MainViewModel.swift */,
+				C506A44224436F0F00FF5D50 /* MainViewState.swift */,
 				B7F974B524158F0B001B1A5A /* Models */,
 			);
 			path = Main;
@@ -310,8 +317,42 @@
 			isa = PBXGroup;
 			children = (
 				C56B9A072443420B0005FB03 /* PersonnalInfosView.swift */,
+				C5F574212444865D0000B822 /* CustomView */,
 			);
 			path = PersonnalInfos;
+			sourceTree = "<group>";
+		};
+		C5CCC7D024449A3F004AD2B2 /* ExperienceInfos */ = {
+			isa = PBXGroup;
+			children = (
+				C5CCC7D124449A66004AD2B2 /* ExperienceInfosView.swift */,
+			);
+			path = ExperienceInfos;
+			sourceTree = "<group>";
+		};
+		C5F5741E244483AF0000B822 /* Work */ = {
+			isa = PBXGroup;
+			children = (
+				C5F5741F244483C50000B822 /* WorkView.swift */,
+				C5F57422244486760000B822 /* CustomView */,
+			);
+			path = Work;
+			sourceTree = "<group>";
+		};
+		C5F574212444865D0000B822 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				B75FFCC8243CECDD004EB6CE /* SkillView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		C5F57422244486760000B822 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				C5F57423244486980000B822 /* WorkDetailView.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +372,7 @@
 			);
 			name = "CV-MVVM-SwiftUI";
 			packageProductDependencies = (
+				B7DF11F624447809004F1600 /* SwiftUIX */,
 			);
 			productName = "MVVM-SwiftUI";
 			productReference = B7873F692412CF9100E8F87D /* CV-MVVM-SwiftUI.app */;
@@ -405,6 +447,7 @@
 			);
 			mainGroup = B7873F602412CF9100E8F87D;
 			packageReferences = (
+				B7DF11F524447809004F1600 /* XCRemoteSwiftPackageReference "SwiftUIX" */,
 			);
 			productRefGroup = B7873F6A2412CF9100E8F87D /* Products */;
 			projectDirPath = "";
@@ -452,24 +495,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7873FE12412D0F900E8F87D /* Serializable.swift in Sources */,
+				C5CCC7D224449A66004AD2B2 /* ExperienceInfosView.swift in Sources */,
 				B7873FD42412CFF600E8F87D /* HostingViewController.swift in Sources */,
 				B7873FD02412CFF600E8F87D /* DependencyContainer.swift in Sources */,
 				B7873FD52412CFF600E8F87D /* AnyGestureRecognizer.swift in Sources */,
 				B789CE94243505DC007F6E49 /* ProfessionalExp.swift in Sources */,
 				B7F974AB24158DAC001B1A5A /* CV.swift in Sources */,
 				B78A33802430D33500628682 /* MainFactory.swift in Sources */,
+				C506A44324436F0F00FF5D50 /* MainViewState.swift in Sources */,
 				B7873FDA2412CFF600E8F87D /* Location.swift in Sources */,
 				B7873FC92412CFF600E8F87D /* MainViewModel.swift in Sources */,
 				C56B9A082443420B0005FB03 /* PersonnalInfosView.swift in Sources */,
 				B7873FD92412CFF600E8F87D /* AppDelegate.swift in Sources */,
 				B7205165243A4B9500ABE160 /* ImageView.swift in Sources */,
+				C5F57420244483C50000B822 /* WorkView.swift in Sources */,
 				B7873FCF2412CFF600E8F87D /* View.swift in Sources */,
 				B7873FCA2412CFF600E8F87D /* MainView.swift in Sources */,
 				B7873FDF2412D09000E8F87D /* ServerApiClient.swift in Sources */,
 				B7205167243A4BB200ABE160 /* ImageLoader.swift in Sources */,
 				B7873FC72412CFF600E8F87D /* MainServerAPIClient.swift in Sources */,
 				B7873FDD2412CFF600E8F87D /* SceneDelegate.swift in Sources */,
+				C5F57424244486980000B822 /* WorkDetailView.swift in Sources */,
 				B789CE92243505A1007F6E49 /* Skill.swift in Sources */,
+				C506A44124436E3A00FF5D50 /* TabBarView.swift in Sources */,
 				B75FFCC9243CECDD004EB6CE /* SkillView.swift in Sources */,
 				B7873FD82412CFF600E8F87D /* NavigationConfigurator.swift in Sources */,
 				B7873FE82412D7CF00E8F87D /* ColorPalette.swift in Sources */,
@@ -806,6 +854,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B7DF11F524447809004F1600 /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUIX/SwiftUIX";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B7DF11F624447809004F1600 /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7DF11F524447809004F1600 /* XCRemoteSwiftPackageReference "SwiftUIX" */;
+			productName = SwiftUIX;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B7873F612412CF9100E8F87D /* Project object */;
 }
