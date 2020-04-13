@@ -17,30 +17,54 @@ struct MainView: View {
         NavigationView{
             
             ZStack {
-                Color("LightBlue").edgesIgnoringSafeArea(.all)
+               /* VStack {
+                    Text("voila")
+                    Spacer()
+
+                }
+                
+                VStack {
+                    Text("oui")
+                    Spacer()
+                }
                 
                 VStack {
                     Spacer()
-                        .frame(height: CGFloat(120.0))
+                    Text("ooooh")
+                }*/
+                
+                
+                Color("MediumBlue").edgesIgnoringSafeArea(.all)
+                
+                VStack {
+                    Spacer()
+                        .frame(height: 0.0)
                     PersonnalInfosView(viewModel: viewModel)
                     Spacer()
-                }.edgesIgnoringSafeArea([.top, .bottom]).hidden((!viewModel.isDataLoaded) || (viewModel.state != .personnalInfos))
+                }.hidden((!viewModel.isDataLoaded) || (viewModel.state != .personnalInfos))
                 
-                VStack {
-                    EmptyView()
-                    TabBarView(state: $viewModel.state)
+                /*Stack {
+                    WorkView(viewModel: viewModel)
 
                 }.edgesIgnoringSafeArea([.top, .bottom])
+                .hidden((viewModel.state != .work))
+                */
                 
+                VStack {
+                    WorkView(viewModel: viewModel).hidden(viewModel.state != .work)
+
+                    TabBarView(state: $viewModel.state)
+                }
+                //.hidden(viewModel.state == .personnalInfos)
+
             }
-        }
+        }.edgesIgnoringSafeArea([.top, .bottom])
         
     }
     
 }
 
 struct MainView_Previews: PreviewProvider {
-    @State var test: String
     
     static var previews: some View {
         let dependencyContainer = DependencyContainer()

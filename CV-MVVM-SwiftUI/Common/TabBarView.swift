@@ -15,13 +15,13 @@ struct TabBarView: View {
         
     var body: some View {
         
-        HStack(alignment: .top) {
+        HStack {
 
             VStack {
                 Button(action: {
                     self.state = .work
                 }) {
-                    Image("work").renderingMode(.original).resizable().aspectRatio(contentMode: .fit).padding(.all, 10)
+                    Image("work").renderingMode(.original).resizable().aspectRatio(contentMode: .fit).padding(.all, 5)
                 }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                 Spacer()
                     .frame(height: 0.0)
@@ -32,7 +32,7 @@ struct TabBarView: View {
                 Button(action: {
                     self.state = .school
                 }) {
-                    Image("school").renderingMode(.original).resizable().aspectRatio(contentMode: .fit).padding(.all, 10)
+                    Image("school").renderingMode(.original).resizable().aspectRatio(contentMode: .fit).padding(.all, 5)
                 }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                 Spacer()
                     .frame(height: 0.0)
@@ -43,7 +43,7 @@ struct TabBarView: View {
                 Button(action: {
                     self.state = .associative
                 }) {
-                    Image("team").renderingMode(.original).resizable().aspectRatio(contentMode: .fit).padding(.all, 10)
+                    Image("team").renderingMode(.original).resizable().aspectRatio(contentMode: .fit).padding(.all, 5)
                 }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                 Spacer()
                     .frame(height: 0.0)
@@ -52,7 +52,9 @@ struct TabBarView: View {
             
         }
         .frame(height: 48.0)
+        .backgroundColor(.white)
         .hidden(state == .personnalInfos)
+        
 
     }
 }

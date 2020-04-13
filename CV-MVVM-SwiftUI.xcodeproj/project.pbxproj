@@ -39,6 +39,8 @@
 		C506A44324436F0F00FF5D50 /* MainViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506A44224436F0F00FF5D50 /* MainViewState.swift */; };
 		C56B9A05244339BB0005FB03 /* getCVMock.json in Resources */ = {isa = PBXBuildFile; fileRef = C56B9A04244339BB0005FB03 /* getCVMock.json */; };
 		C56B9A082443420B0005FB03 /* PersonnalInfosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56B9A072443420B0005FB03 /* PersonnalInfosView.swift */; };
+		C5F57420244483C50000B822 /* WorkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F5741F244483C50000B822 /* WorkView.swift */; };
+		C5F57424244486980000B822 /* WorkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F57423244486980000B822 /* WorkDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,8 @@
 		C506A44224436F0F00FF5D50 /* MainViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewState.swift; sourceTree = "<group>"; };
 		C56B9A04244339BB0005FB03 /* getCVMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getCVMock.json; sourceTree = "<group>"; };
 		C56B9A072443420B0005FB03 /* PersonnalInfosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnalInfosView.swift; sourceTree = "<group>"; };
+		C5F5741F244483C50000B822 /* WorkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkView.swift; sourceTree = "<group>"; };
+		C5F57423244486980000B822 /* WorkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,14 +137,6 @@
 				B7205166243A4BB200ABE160 /* ImageLoader.swift */,
 			);
 			path = Image;
-			sourceTree = "<group>";
-		};
-		B75FFCC7243CEC9E004EB6CE /* View */ = {
-			isa = PBXGroup;
-			children = (
-				B75FFCC8243CECDD004EB6CE /* SkillView.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		B7873F602412CF9100E8F87D = {
@@ -216,6 +212,7 @@
 		B7873FA42412CFF500E8F87D /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				C5F5741E244483AF0000B822 /* Work */,
 				C56B9A06244341FA0005FB03 /* PersonnalInfos */,
 				B7F974B424158F05001B1A5A /* Main */,
 			);
@@ -272,7 +269,6 @@
 				B7873FBA2412CFF600E8F87D /* HostingViewController.swift */,
 				B7873FBE2412CFF600E8F87D /* NavigationConfigurator.swift */,
 				B75FFCC6243CEC93004EB6CE /* Image */,
-				B75FFCC7243CEC9E004EB6CE /* View */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -318,8 +314,34 @@
 			isa = PBXGroup;
 			children = (
 				C56B9A072443420B0005FB03 /* PersonnalInfosView.swift */,
+				C5F574212444865D0000B822 /* CustomView */,
 			);
 			path = PersonnalInfos;
+			sourceTree = "<group>";
+		};
+		C5F5741E244483AF0000B822 /* Work */ = {
+			isa = PBXGroup;
+			children = (
+				C5F5741F244483C50000B822 /* WorkView.swift */,
+				C5F57422244486760000B822 /* CustomView */,
+			);
+			path = Work;
+			sourceTree = "<group>";
+		};
+		C5F574212444865D0000B822 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				B75FFCC8243CECDD004EB6CE /* SkillView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		C5F57422244486760000B822 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				C5F57423244486980000B822 /* WorkDetailView.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -474,12 +496,14 @@
 				C56B9A082443420B0005FB03 /* PersonnalInfosView.swift in Sources */,
 				B7873FD92412CFF600E8F87D /* AppDelegate.swift in Sources */,
 				B7205165243A4B9500ABE160 /* ImageView.swift in Sources */,
+				C5F57420244483C50000B822 /* WorkView.swift in Sources */,
 				B7873FCF2412CFF600E8F87D /* View.swift in Sources */,
 				B7873FCA2412CFF600E8F87D /* MainView.swift in Sources */,
 				B7873FDF2412D09000E8F87D /* ServerApiClient.swift in Sources */,
 				B7205167243A4BB200ABE160 /* ImageLoader.swift in Sources */,
 				B7873FC72412CFF600E8F87D /* MainServerAPIClient.swift in Sources */,
 				B7873FDD2412CFF600E8F87D /* SceneDelegate.swift in Sources */,
+				C5F57424244486980000B822 /* WorkDetailView.swift in Sources */,
 				B789CE92243505A1007F6E49 /* Skill.swift in Sources */,
 				C506A44124436E3A00FF5D50 /* TabBarView.swift in Sources */,
 				B75FFCC9243CECDD004EB6CE /* SkillView.swift in Sources */,

@@ -37,17 +37,22 @@ class MainViewModel: ObservableObject, MainViewModelInterface {
     func getCV() {
         
         serverAPI.getCV() { result in
-            
-            self.isDataLoaded = true
-            
+                        
             switch result {
             case .success(let cv):
                 self.CVDatas = cv
+                self.isDataLoaded = true
                 break
             case .failure(_):
-                break
+                if let path = Bundle.main.path(forResource: "getCVMock", ofType: "json") {
+                    do {
+                        let decoder = JSONDecoder()
+                        let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                        self.CVDatas = try decoder.decode(CV.self, from: data)
+                        self.isDataLoaded = true
+                    } catch { fatalError("No getCVMock file") }
+                }
             }
         }
     }
-    
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ProfessionalExp: Codable {
+struct ProfessionalExp: Codable, Hashable {
     let image: String
     let date: String
     let description: String

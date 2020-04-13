@@ -69,7 +69,6 @@ struct PersonnalInfosView: View {
 }
 
 struct PersonnalInfosView_Previews: PreviewProvider {
-    @State var test: String
     
     static var previews: some View {
         let dependencyContainer = DependencyContainer()
