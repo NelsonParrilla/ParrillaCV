@@ -14,3 +14,24 @@ enum MainViewState: Equatable {
     case school
     case associative
 }
+
+extension MainViewState {
+    
+    var navBarTitle: String {
+        switch self {
+        case .personnalInfos:
+            return ""
+
+        case .work:
+            return "Expériences professionnelles"
+            
+        case .school:
+            return "Parcours scolaire et universitaire"
+            
+        case .associative:
+            return "Activités extra-professionnelles"
+
+        }
+    }
+
+}

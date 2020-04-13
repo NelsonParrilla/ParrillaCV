@@ -21,6 +21,8 @@ class MainViewModel: ObservableObject, MainViewModelInterface {
     @Published var isDataLoaded = false
     
     @Published var state = MainViewState.personnalInfos
+    
+    @Published var isExpInfosVisible = false
 
     let factory: MainFactoryInterface
     

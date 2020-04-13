@@ -15,13 +15,14 @@ struct PersonnalInfosView: View {
     var body: some View {
         
         VStack {
-            ImageView(withURL: viewModel.CVDatas.image)              .aspectRatio(contentMode: .fill)
+            ImageView(withURL: viewModel.CVDatas.image)
+                .aspectRatio(contentMode: .fill)
                 .frame(width: 150.0, height: 150.0)
                 .cornerRadius(100)
                 .shadow(color: Color(.sRGB, white: 0, opacity: 0.3), radius: 5, x: 0, y: 5).onTapGesture {
                     self.viewModel.state = .work
+                    self.viewModel.isExpInfosVisible = true
             }
-            
             
             Text("Nelson PARRILLA")
                 .font(.largeTitle)
@@ -63,9 +64,7 @@ struct PersonnalInfosView: View {
                 
             }
         }
-        
     }
-    
 }
 
 struct PersonnalInfosView_Previews: PreviewProvider {

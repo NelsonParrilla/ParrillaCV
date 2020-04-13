@@ -17,48 +17,23 @@ struct MainView: View {
         NavigationView{
             
             ZStack {
-               /* VStack {
-                    Text("voila")
-                    Spacer()
-
+                
+                NavigationLink(destination: ExperienceInfosView(viewModel: viewModel), isActive: $viewModel.isExpInfosVisible) {
+                    Color("MediumBlue").edgesIgnoringSafeArea(.all)
                 }
-                
-                VStack {
-                    Text("oui")
-                    Spacer()
-                }
-                
-                VStack {
-                    Spacer()
-                    Text("ooooh")
-                }*/
-                
                 
                 Color("MediumBlue").edgesIgnoringSafeArea(.all)
                 
                 VStack {
                     Spacer()
-                        .frame(height: 0.0)
+                        .frame(height: 128.0)
                     PersonnalInfosView(viewModel: viewModel)
-                    Spacer()
-                }.hidden((!viewModel.isDataLoaded) || (viewModel.state != .personnalInfos))
-                
-                /*Stack {
-                    WorkView(viewModel: viewModel)
-
-                }.edgesIgnoringSafeArea([.top, .bottom])
-                .hidden((viewModel.state != .work))
-                */
-                
-                VStack {
-                    WorkView(viewModel: viewModel).hidden(viewModel.state != .work)
-
-                    TabBarView(state: $viewModel.state)
                 }
-                //.hidden(viewModel.state == .personnalInfos)
+                    .edgesIgnoringSafeArea([.top, .bottom])
+                .hidden((!viewModel.isDataLoaded) || (viewModel.state != .personnalInfos))
 
             }
-        }.edgesIgnoringSafeArea([.top, .bottom])
+        }
         
     }
     

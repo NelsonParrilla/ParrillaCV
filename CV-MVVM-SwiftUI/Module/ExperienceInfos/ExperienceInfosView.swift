@@ -1,5 +1,5 @@
 //
-//  WorkView.swift
+//  ExperienceInfosView.swift
 //  CV-MVVM-SwiftUI
 //
 //  Created by parrilla nelson on 13/04/2020.
@@ -8,34 +8,40 @@
 
 import SwiftUI
 
-struct WorkView: View {
+struct ExperienceInfosView: View {
     
     @ObservedObject var viewModel: MainViewModel
     
+    var backButton: some View {
+        Button(action: {
+            self.viewModel.state = .personnalInfos
+            self.viewModel.isExpInfosVisible = false
+        }) {
+            HStack(spacing: 4) {
+                Image(systemName: "chevron.left")
+            }
+            .foregroundColor(Color("DarkBlue"))
+        }
+        .frame(width: 20.0, height: 20.0)
+    }
+    
     var body: some View {
         
-        List {
-            
             VStack {
-                ForEach(viewModel.CVDatas.professionalExp, id: \.self) { exp in
-                    VStack {
-                        Spacer().frame(height: 32.0)
-                        WorkDetailView(date: exp.date, text: exp.description, imageURLString: exp.image)
-                    }
+                WorkView(viewModel: viewModel)
+                TabBarView(state: $viewModel.state)
+            }.navigationBarTitle(Text(viewModel.state.navBarTitle), displayMode: .inline)
+        .navigationBarItems(leading: backButton)
 
-                }
-                
-            }
-            
-        }
         
     }
     
 }
 
-struct WorkView_Previews: PreviewProvider {
+struct ExperienceInfosView_Previews: PreviewProvider {
     
     static var previews: some View {
+        
         let dependencyContainer = DependencyContainer()
         let viewModel = MainViewModel(factory: dependencyContainer.makeMainFactory() as! MainFactory)
         
@@ -46,7 +52,7 @@ struct WorkView_Previews: PreviewProvider {
                 viewModel.CVDatas = try decoder.decode(CV.self, from: data)
             } catch { fatalError("No getCVMock file") }
         }
-        
-        return WorkView(viewModel: viewModel)
+
+        return ExperienceInfosView(viewModel: viewModel)
     }
 }
