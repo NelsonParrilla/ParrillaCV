@@ -52,7 +52,7 @@ struct TabBarView: View {
             
         }
         .frame(height: 48.0)
-        .backgroundColor(.white)
+        .background(Rectangle().fill(Color.white).shadow(radius: 8))
         .hidden(state == .personnalInfos)
         
 
