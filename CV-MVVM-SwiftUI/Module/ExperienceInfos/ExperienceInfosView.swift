@@ -28,7 +28,10 @@ struct ExperienceInfosView: View {
     var body: some View {
         
             VStack {
-                WorkView(viewModel: viewModel)
+                ZStack {
+                    WorkView(viewModel: viewModel).hidden(viewModel.state != .work)
+                    SchoolView(viewModel: viewModel).hidden(viewModel.state != .school)
+                }
                 TabBarView(state: $viewModel.state)
             }.navigationBarTitle(Text(viewModel.state.navBarTitle), displayMode: .inline)
         .navigationBarItems(leading: backButton)
