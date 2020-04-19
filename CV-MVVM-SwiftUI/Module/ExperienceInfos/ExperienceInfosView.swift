@@ -31,6 +31,7 @@ struct ExperienceInfosView: View {
                 ZStack {
                     WorkView(viewModel: viewModel).hidden(viewModel.state != .work)
                     SchoolView(viewModel: viewModel).hidden(viewModel.state != .school)
+                    SocialView(viewModel: viewModel).hidden(viewModel.state != .social)
                 }
                 TabBarView(state: $viewModel.state)
             }.navigationBarTitle(Text(viewModel.state.navBarTitle), displayMode: .inline)

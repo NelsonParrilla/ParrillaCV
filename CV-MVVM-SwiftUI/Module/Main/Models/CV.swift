@@ -16,8 +16,8 @@ struct CV: Codable {
     let email: String
     let skills: [Skill]
     let professionalExp: [ProfessionalExp]
-    let associative: String
-    let sport: String
-    let languages: String
-    let projects: String
+    let associative: [ProfessionalExp]
+    let sport: [ProfessionalExp]
+    let languages: [ProfessionalExp]
+    let projects: [ProfessionalExp]
 }

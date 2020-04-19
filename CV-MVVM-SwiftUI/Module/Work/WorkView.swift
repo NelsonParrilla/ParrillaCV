@@ -19,8 +19,8 @@ struct WorkView: View {
             VStack {
                 ForEach(viewModel.CVDatas.professionalExp, id: \.self) { exp in
                     VStack {
-                        Spacer().frame(height: 32.0)
                         WorkDetailView(date: exp.date, text: exp.description, imageURLString: exp.image)
+                        Spacer().frame(height: 32.0)
                     }
 
                 }

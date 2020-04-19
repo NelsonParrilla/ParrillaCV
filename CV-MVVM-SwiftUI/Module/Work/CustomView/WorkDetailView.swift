@@ -14,14 +14,14 @@ struct WorkDetailView: View {
     
     var text: String
     
-    var imageURLString: String
+    var imageURLString: String?
     
     var body: some View {
         VStack {
-            ImageView(withURL: imageURLString)
+            ImageView(withURL: imageURLString ?? "")
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 50.0, height: 50.0)
-            Spacer().frame(height: 8.0)
+            Spacer().frame(height: 16.0)
             Text(date)
             Spacer().frame(height: 16.0)
             Text(text).font(.system(size: 12))
