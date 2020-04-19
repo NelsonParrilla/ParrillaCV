@@ -12,7 +12,7 @@ enum MainViewState: Equatable {
     case personnalInfos
     case work
     case school
-    case associative
+    case social
 }
 
 extension MainViewState {
@@ -28,7 +28,7 @@ extension MainViewState {
         case .school:
             return "Parcours scolaire et universitaire"
             
-        case .associative:
+        case .social:
             return "Activités extra-professionnelles"
 
         }

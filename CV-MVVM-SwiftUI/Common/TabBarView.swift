@@ -41,13 +41,13 @@ struct TabBarView: View {
             
             VStack {
                 Button(action: {
-                    self.state = .associative
+                    self.state = .social
                 }) {
-                    Image("team").renderingMode(.original).resizable().aspectRatio(contentMode: .fit).padding(.all, 5)
+                    Image("man").renderingMode(.original).resizable().aspectRatio(contentMode: .fit).padding(.all, 5)
                 }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                 Spacer()
                     .frame(height: 0.0)
-                Rectangle().fill(Color("DarkBlue")).frame(height: CGFloat(5.0)).hidden(!(state == .associative))
+                Rectangle().fill(Color("DarkBlue")).frame(height: CGFloat(5.0)).hidden(!(state == .social))
             }
             
         }

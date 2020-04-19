@@ -1,5 +1,5 @@
 //
-//  SchoolView.swift
+//  AssociativeView.swift
 //  CV-MVVM-SwiftUI
 //
 //  Created by parrilla nelson on 19/04/2020.
@@ -8,24 +8,33 @@
 
 import SwiftUI
 
-struct SchoolView: View {
+struct SocialView: View {
     
     @ObservedObject var viewModel: MainViewModel
     
     var body: some View {
         
         List {
+            
             VStack {
-                SchoolDetailView(date: "2015", text: NSLocalizedString("school_2015_polytech", comment: ""), imageName: "polytech")
+                SocialDetailView(title: NSLocalizedString("social_associative_title", comment: "Vie associative"),
+                                 imageName: "team",
+                                 exps:viewModel.CVDatas.associative)
                 Spacer().frame(height: 32.0)
-                SchoolDetailView(date: "2015", text: NSLocalizedString("school_2015_dessiin", comment: ""), imageName: "ecole_design")
+                SocialDetailView(title: NSLocalizedString("social_sport_title", comment: "Sport"),
+                                 imageName: "soccer",
+                                 exps:viewModel.CVDatas.sport)
                 Spacer().frame(height: 32.0)
-                SchoolDetailView(date: "2012", text: NSLocalizedString("school_2012", comment: ""), imageName: "iut")
+                SocialDetailView(title: NSLocalizedString("social_languages_title", comment: "Langues"),
+                                 imageName: "earth",
+                                 exps:viewModel.CVDatas.languages)
                 Spacer().frame(height: 32.0)
-                SchoolDetailView(date: "2010", text: NSLocalizedString("school_2010", comment: ""), imageName: "benjam")
+                SocialDetailView(title: NSLocalizedString("social_projects_title", comment: "Projets"),
+                                 imageName: "light-bulb",
+                                 exps:viewModel.CVDatas.projects)
                 Spacer().frame(height: 32.0)
-                SchoolDetailView(date: "2008", text: NSLocalizedString("school_2008", comment: ""), imageName: "benjam")
-                Spacer().frame(height: 32.0)
+                
+                
             }
             
         }
@@ -34,7 +43,7 @@ struct SchoolView: View {
     
 }
 
-struct SchoolView_Previews: PreviewProvider {
+struct SocialView_Previews: PreviewProvider {
     
     static var previews: some View {
         let dependencyContainer = DependencyContainer()
@@ -48,6 +57,6 @@ struct SchoolView_Previews: PreviewProvider {
             } catch { fatalError("No getCVMock file") }
         }
         
-        return SchoolView(viewModel: viewModel)
+        return SocialView(viewModel: viewModel)
     }
 }

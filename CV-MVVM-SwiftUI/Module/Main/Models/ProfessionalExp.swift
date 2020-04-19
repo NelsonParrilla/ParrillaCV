@@ -9,7 +9,7 @@
 import Foundation
 
 struct ProfessionalExp: Codable, Hashable {
-    let image: String
+    let image: String?
     let date: String
     let description: String
 }
