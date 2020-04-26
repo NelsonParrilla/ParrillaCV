@@ -11,6 +11,18 @@ import SwiftUI
 struct PersonnalInfosView: View {
     
     @ObservedObject var viewModel: MainViewModel
+    
+    var nextButton: some View {
+        Button(action: {
+            self.viewModel.displayExperienceInfosView()
+        }) {
+            HStack(spacing: 4) {
+                Image(systemName: "chevron.right")
+            }
+            .foregroundColor(Color("DarkBlue"))
+        }
+        .frame(width: 20.0, height: 20.0)
+    }
         
     var body: some View {
         
@@ -20,8 +32,7 @@ struct PersonnalInfosView: View {
                 .frame(width: 150.0, height: 150.0)
                 .cornerRadius(100)
                 .shadow(color: Color(.sRGB, white: 0, opacity: 0.3), radius: 5, x: 0, y: 5).onTapGesture {
-                    self.viewModel.state = .work
-                    self.viewModel.isExpInfosVisible = true
+                    self.viewModel.displayExperienceInfosView()
             }
             
             Text("Nelson PARRILLA")
@@ -63,7 +74,7 @@ struct PersonnalInfosView: View {
                 }
                 
             }
-        }
+        }.navigationBarItems(trailing: nextButton)
     }
 }
 

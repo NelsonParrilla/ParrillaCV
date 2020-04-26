@@ -12,6 +12,8 @@ import SwiftUI
 protocol MainViewModelInterface {
     
     func getCV()
+    
+    func displayExperienceInfosView()
 }
 
 class MainViewModel: ObservableObject, MainViewModelInterface {
@@ -56,5 +58,10 @@ class MainViewModel: ObservableObject, MainViewModelInterface {
                 }
             }
         }
+    }
+    
+    func displayExperienceInfosView() {
+        self.state = .work
+        self.isExpInfosVisible = true
     }
 }
