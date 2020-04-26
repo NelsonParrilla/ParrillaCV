@@ -17,11 +17,11 @@ struct SchoolView: View {
         List {
             VStack {
                 Spacer().frame(height: 32.0)
-                SchoolDetailView(date: "2015", text: NSLocalizedString("school_2015_polytech", comment: ""), imageName: "polytech")
-                SchoolDetailView(date: "2015", text: NSLocalizedString("school_2015_dessiin", comment: ""), imageName: "ecole_design")
-                SchoolDetailView(date: "2012", text: NSLocalizedString("school_2012", comment: ""), imageName: "iut")
-                SchoolDetailView(date: "2010", text: NSLocalizedString("school_2010", comment: ""), imageName: "benjam")
-                SchoolDetailView(date: "2008", text: NSLocalizedString("school_2008", comment: ""), imageName: "benjam")
+                SchoolDetailView(title: NSLocalizedString("school_polytech", comment: "Polytech Nantes"), date: "2015", text: NSLocalizedString("school_2015_polytech", comment: ""), imageName: "polytech")
+                SchoolDetailView(title: NSLocalizedString("school_design", comment: "Ecole de design de Nantes"), date: "2015", text: NSLocalizedString("school_2015_dessiin", comment: ""), imageName: "ecole_design")
+                SchoolDetailView(title: NSLocalizedString("school_iut", comment: "I.U.T. de Tours"), date: "2012", text: NSLocalizedString("school_2012", comment: ""), imageName: "iut")
+                SchoolDetailView(title: NSLocalizedString("school_benjam", comment: "Lycée Benjamin Franklin - Orléans"), date: "2010", text: NSLocalizedString("school_2010", comment: ""), imageName: "benjam")
+                SchoolDetailView(title: NSLocalizedString("school_benjam", comment: "Lycée Benjamin Franklin - Orléans"), date: "2008", text: NSLocalizedString("school_2008", comment: ""), imageName: "benjam")
             }
             
         }

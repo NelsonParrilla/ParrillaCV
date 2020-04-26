@@ -10,29 +10,42 @@ import SwiftUI
 
 struct WorkDetailView: View {
     
-    var date: String
-    
-    var text: String
-    
-    var imageURLString: String?
+    var exp: ProfessionalExp
     
     var body: some View {
         VStack {
-            ImageView(withURL: imageURLString ?? "")
+            
+            Text(exp.title).fontWeight(.bold).multilineTextAlignment(.center)
+            ImageView(withURL: exp.image ?? "")
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 50.0, height: 50.0)
-            Spacer().frame(height: 16.0)
-            Text(date)
-            Spacer().frame(height: 16.0)
-            Text(text).font(.system(size: 12))
+            
+            VStack {
+                ForEach(exp.exp, id: \.self) { exp in
+                    VStack {
+                        Spacer().frame(height: 16.0)
+                        Text(exp.date)
+                        Spacer().frame(height: 8.0)
+                        HStack {
+                            Text(exp.description).font(.system(size: 12))
+                            Spacer()
+                        }
+                        Spacer().frame(height: 16.0)
+                    }
+                    
+                }
+            }
             Spacer().frame(height: 32.0)
+            
         }
+        
     }
 }
 
 struct WorkDetailView_Previews: PreviewProvider {
     
     static var previews: some View {
-        return WorkDetailView(date: "2018/2019", text: "Experience 1", imageURLString: "")
+        
+        return WorkDetailView(exp: ProfessionalExp(title: "Work", image: "", exp: [ProfessionalExpDetail(date: "2018/2019", description: "Experience 1")]))
     }
 }

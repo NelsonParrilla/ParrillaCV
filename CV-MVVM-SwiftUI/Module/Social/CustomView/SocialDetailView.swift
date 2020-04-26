@@ -14,12 +14,12 @@ struct SocialDetailView: View {
     
     var imageName: String
     
-    var exps : [ProfessionalExp]
+    var exps : [ProfessionalExpDetail]
     
     var body: some View {
         VStack {
             
-            Text(title).fontWeight(.bold).multilineTextAlignment(.center).fixedSize()
+            Text(title).fontWeight(.bold).multilineTextAlignment(.center)
             Image(imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
@@ -51,6 +51,6 @@ struct SocialDetailView: View {
 struct SocialDetailView_Previews: PreviewProvider {
     
     static var previews: some View {
-        return SocialDetailView(title: "Sport", imageName: "polytech", exps:[ProfessionalExp(image: "", date: "2019", description: "test")])
+        return SocialDetailView(title: "Sport", imageName: "polytech", exps:[ProfessionalExpDetail(date: "2019", description: "test")])
     }
 }

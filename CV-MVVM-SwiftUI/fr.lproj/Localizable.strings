@@ -3,6 +3,10 @@
 "school_2012" = "Diplôme universitaire de technologie\nGénie électrique et informatique industrielle\nI.U.T. de Tours";
 "school_2015_polytech" = "Diplôme d'ingénieur en électronique et technologies numériques\nPolytech Nantes";
 "school_2015_dessiin" = "Diplôme universitaire - Design Services Interactifs Innovants Objets communicants et interfaces tangibles\nEcole de design de Nantes / Polytech Nantes";
+"school_benjam" = "Lycée Benjamin Franklin - Orléans";
+"school_iut" = "I.U.T. de Tours";
+"school_design" = "Ecole de design de Nantes";
+"school_polytech" = "Polytech Nantes";
 "social_associative_title" = "Vie associative";
 "social_sport_title" = "Sport";
 "social_languages_title" = "Langues";

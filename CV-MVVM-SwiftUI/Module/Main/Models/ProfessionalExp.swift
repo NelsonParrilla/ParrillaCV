@@ -9,7 +9,12 @@
 import Foundation
 
 struct ProfessionalExp: Codable, Hashable {
+    let title: String
     let image: String?
+    let exp: [ProfessionalExpDetail]
+}
+
+struct ProfessionalExpDetail: Codable, Hashable {
     let date: String
     let description: String
 }

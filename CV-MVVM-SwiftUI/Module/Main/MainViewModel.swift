@@ -18,7 +18,7 @@ protocol MainViewModelInterface {
 
 class MainViewModel: ObservableObject, MainViewModelInterface {
     
-    @Published var CVDatas = CV(image: defaultImage, role: "", adresse: "", phone: "", email: "", skills: [], professionalExp: [], associative: [], sport: [], languages: [], projects: [])
+    @Published var CVDatas = CV(image: defaultImage, role: "", adresse: "", phone: "", email: "", skills: [], professionalExp: [], associative: ProfessionalExp(title: "", image: "", exp: []), sport: ProfessionalExp(title: "", image: "", exp: []), languages: ProfessionalExp(title: "", image: "", exp: []), projects: ProfessionalExp(title: "", image: "", exp: []))
         
     @Published var isDataLoaded = false
     

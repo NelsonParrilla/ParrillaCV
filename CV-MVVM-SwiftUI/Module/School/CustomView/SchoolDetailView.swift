@@ -10,6 +10,8 @@ import SwiftUI
 
 struct SchoolDetailView: View {
     
+    var title: String
+    
     var date: String
     
     var text: String
@@ -18,6 +20,7 @@ struct SchoolDetailView: View {
     
     var body: some View {
         VStack {
+            Text(title).fontWeight(.bold).multilineTextAlignment(.center)
             Image(imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
@@ -37,6 +40,6 @@ struct SchoolDetailView: View {
 struct SchoolDetailView_Previews: PreviewProvider {
     
     static var previews: some View {
-        return SchoolDetailView(date: "2018/2019", text: "Diplôme d'ingénieur en électronique et technologies numériques\nDiplôme universitaire Polytech / Ecole de design de Nantes sur les objets connectés\nPolytech Nantes", imageName: "")
+        return SchoolDetailView(title: "", date: "2018/2019", text: "Diplôme d'ingénieur en électronique et technologies numériques\nDiplôme universitaire Polytech / Ecole de design de Nantes sur les objets connectés\nPolytech Nantes", imageName: "")
     }
 }
