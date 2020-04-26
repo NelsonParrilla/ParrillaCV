@@ -10,7 +10,6 @@
 		B7205165243A4B9500ABE160 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7205164243A4B9500ABE160 /* ImageView.swift */; };
 		B7205167243A4BB200ABE160 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7205166243A4BB200ABE160 /* ImageLoader.swift */; };
 		B75FFCC9243CECDD004EB6CE /* SkillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75FFCC8243CECDD004EB6CE /* SkillView.swift */; };
-		B7873F842412CF9300E8F87D /* CV-MVVM_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7873F832412CF9300E8F87D /* CV-MVVM_SwiftUITests.swift */; };
 		B7873F8F2412CF9300E8F87D /* CV-MVVM_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7873F8E2412CF9300E8F87D /* CV-MVVM_SwiftUIUITests.swift */; };
 		B7873FC52412CFF600E8F87D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B7873F9D2412CFF500E8F87D /* Localizable.strings */; };
 		B7873FC72412CFF600E8F87D /* MainServerAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7873FA12412CFF500E8F87D /* MainServerAPIClient.swift */; };
@@ -39,6 +38,9 @@
 		C5087CC4244C661100FA586E /* SchoolDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5087CC3244C661100FA586E /* SchoolDetailView.swift */; };
 		C5087CCC244C7A6D00FA586E /* SocialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5087CCB244C7A6D00FA586E /* SocialView.swift */; };
 		C5087CCF244C840100FA586E /* SocialDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5087CCE244C840100FA586E /* SocialDetailView.swift */; };
+		C53EB71E2455E11500E3CF54 /* MainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53EB71D2455E11500E3CF54 /* MainTests.swift */; };
+		C53EB7212455E18E00E3CF54 /* MainServerAPIClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53EB7202455E18E00E3CF54 /* MainServerAPIClientMock.swift */; };
+		C53EB7232455E2C200E3CF54 /* MainFactoryInterfaceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53EB7222455E2C200E3CF54 /* MainFactoryInterfaceMock.swift */; };
 		C56B9A05244339BB0005FB03 /* getCVMock.json in Resources */ = {isa = PBXBuildFile; fileRef = C56B9A04244339BB0005FB03 /* getCVMock.json */; };
 		C56B9A082443420B0005FB03 /* PersonnalInfosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56B9A072443420B0005FB03 /* PersonnalInfosView.swift */; };
 		C5B1B127244C4DB000175810 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = C5B1B126244C4DB000175810 /* SwiftUIX */; };
@@ -71,7 +73,6 @@
 		B75FFCC8243CECDD004EB6CE /* SkillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillView.swift; sourceTree = "<group>"; };
 		B7873F692412CF9100E8F87D /* CV-MVVM-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CV-MVVM-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7873F7F2412CF9300E8F87D /* CV-MVVM-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CV-MVVM-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7873F832412CF9300E8F87D /* CV-MVVM_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CV-MVVM_SwiftUITests.swift"; sourceTree = "<group>"; };
 		B7873F852412CF9300E8F87D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7873F8A2412CF9300E8F87D /* CV-MVVM-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CV-MVVM-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7873F8E2412CF9300E8F87D /* CV-MVVM_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CV-MVVM_SwiftUIUITests.swift"; sourceTree = "<group>"; };
@@ -106,6 +107,9 @@
 		C5087CC9244C673500FA586E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C5087CCB244C7A6D00FA586E /* SocialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialView.swift; sourceTree = "<group>"; };
 		C5087CCE244C840100FA586E /* SocialDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialDetailView.swift; sourceTree = "<group>"; };
+		C53EB71D2455E11500E3CF54 /* MainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTests.swift; sourceTree = "<group>"; };
+		C53EB7202455E18E00E3CF54 /* MainServerAPIClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainServerAPIClientMock.swift; sourceTree = "<group>"; };
+		C53EB7222455E2C200E3CF54 /* MainFactoryInterfaceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFactoryInterfaceMock.swift; sourceTree = "<group>"; };
 		C56B9A04244339BB0005FB03 /* getCVMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getCVMock.json; sourceTree = "<group>"; };
 		C56B9A072443420B0005FB03 /* PersonnalInfosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnalInfosView.swift; sourceTree = "<group>"; };
 		C5B1B129244C506D00175810 /* SchoolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolView.swift; sourceTree = "<group>"; };
@@ -172,7 +176,7 @@
 		B7873F822412CF9300E8F87D /* CV-MVVM-SwiftUITests */ = {
 			isa = PBXGroup;
 			children = (
-				B7873F832412CF9300E8F87D /* CV-MVVM_SwiftUITests.swift */,
+				C53EB71B2455E07100E3CF54 /* Module */,
 				B7873F852412CF9300E8F87D /* Info.plist */,
 			);
 			path = "CV-MVVM-SwiftUITests";
@@ -337,6 +341,32 @@
 				C5087CCE244C840100FA586E /* SocialDetailView.swift */,
 			);
 			path = CustomView;
+			sourceTree = "<group>";
+		};
+		C53EB71B2455E07100E3CF54 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				C53EB71C2455E0F400E3CF54 /* Main */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		C53EB71C2455E0F400E3CF54 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C53EB71F2455E17F00E3CF54 /* Mock */,
+				C53EB71D2455E11500E3CF54 /* MainTests.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C53EB71F2455E17F00E3CF54 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				C53EB7202455E18E00E3CF54 /* MainServerAPIClientMock.swift */,
+				C53EB7222455E2C200E3CF54 /* MainFactoryInterfaceMock.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 		C56B9A03244339770005FB03 /* Mock */ = {
@@ -576,7 +606,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7873F842412CF9300E8F87D /* CV-MVVM_SwiftUITests.swift in Sources */,
+				C53EB71E2455E11500E3CF54 /* MainTests.swift in Sources */,
+				C53EB7232455E2C200E3CF54 /* MainFactoryInterfaceMock.swift in Sources */,
+				C53EB7212455E18E00E3CF54 /* MainServerAPIClientMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
