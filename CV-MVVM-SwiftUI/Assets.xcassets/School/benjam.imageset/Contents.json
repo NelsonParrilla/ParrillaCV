@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Lycéebenjamin.png",
+      "filename" : "benjam.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Lycéebenjamin-1.png",
+      "filename" : "benjam-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Lycéebenjamin-2.png",
+      "filename" : "benjam-2.png",
       "scale" : "3x"
     }
   ],
