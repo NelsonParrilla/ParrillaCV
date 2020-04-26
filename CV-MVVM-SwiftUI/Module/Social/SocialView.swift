@@ -20,19 +20,15 @@ struct SocialView: View {
                 SocialDetailView(title: NSLocalizedString("social_associative_title", comment: "Vie associative"),
                                  imageName: "team",
                                  exps:viewModel.CVDatas.associative)
-                Spacer().frame(height: 32.0)
                 SocialDetailView(title: NSLocalizedString("social_sport_title", comment: "Sport"),
                                  imageName: "soccer",
                                  exps:viewModel.CVDatas.sport)
-                Spacer().frame(height: 32.0)
                 SocialDetailView(title: NSLocalizedString("social_languages_title", comment: "Langues"),
                                  imageName: "earth",
                                  exps:viewModel.CVDatas.languages)
-                Spacer().frame(height: 32.0)
                 SocialDetailView(title: NSLocalizedString("social_projects_title", comment: "Projets"),
                                  imageName: "light-bulb",
                                  exps:viewModel.CVDatas.projects)
-                Spacer().frame(height: 32.0)
                 
                 
             }

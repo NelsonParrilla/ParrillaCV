@@ -17,32 +17,38 @@ struct SocialDetailView: View {
     var exps : [ProfessionalExp]
     
     var body: some View {
-        HStack {
-            VStack {
-                Text(title).multilineTextAlignment(.center).fixedSize()
-                Image(imageName)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: CGFloat(75.0), height: CGFloat(75.0))
-            }
+        VStack {
+            
+            HStack {
+                VStack {
+                    Text(title).multilineTextAlignment(.center).fixedSize()
+                    Image(imageName)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: CGFloat(50.0), height: CGFloat(50.0))
+                }.frame(width: CGFloat(100.0))
 
-            Spacer().frame(width: CGFloat(32.0))
-            VStack {
-                ForEach(exps, id: \.self) { exp in
-                    VStack {
-                        Text(exp.date)
-                        Spacer().frame(height: 16.0)
-                        HStack {
-                            Text(exp.description).font(.system(size: 12))
-                            Spacer()
+                Spacer().frame(width: CGFloat(32.0))
+                VStack {
+                    ForEach(exps, id: \.self) { exp in
+                        VStack {
+                            Text(exp.date)
+                            Spacer().frame(height: 16.0)
+                            HStack {
+                                Text(exp.description).font(.system(size: 12))
+                                Spacer()
+                            }
+                            Spacer().frame(height: 16.0)
                         }
-                        Spacer().frame(height: 16.0)
-                    }
 
+                    }
                 }
             }
-
+            Spacer().frame(height: 16)
+            Rectangle().frame(width: UIScreen.main.bounds.size.width - 32, height: CGFloat(1.0)).foregroundColor(Color(.sRGB, white: 0, opacity: 0.3))
+            
         }
+
     }
 }
 
