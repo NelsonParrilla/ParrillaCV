@@ -25,6 +25,7 @@ extension ServerAPIClient: MainServerAPIClient {
                     let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                     let response = try decoder.decode(CV.self, from: data)
                     then(.success(response))
+                    return
                 } catch { fatalError("No getCVMock file") }
             }
         }
