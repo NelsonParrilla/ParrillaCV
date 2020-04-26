@@ -18,36 +18,34 @@ struct SocialDetailView: View {
     
     var body: some View {
         VStack {
-            HStack {
-                VStack {
-                    Text(title).multilineTextAlignment(.center).fixedSize()
-                    Image(imageName)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: CGFloat(50.0), height: CGFloat(50.0))
-                }.frame(width: CGFloat(100.0))
-
-                Spacer().frame(width: CGFloat(32.0))
-                VStack {
-                    ForEach(exps, id: \.self) { exp in
-                        VStack {
-                            Text(exp.date)
-                            Spacer().frame(height: 16.0)
-                            HStack {
-                                Text(exp.description).font(.system(size: 12))
-                                Spacer()
-                            }
-                            Spacer().frame(height: 16.0)
+            
+            Text(title).fontWeight(.bold).multilineTextAlignment(.center).fixedSize()
+            Image(imageName)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: CGFloat(50.0), height: CGFloat(50.0))
+                .foregroundColor(Color("Green"))
+            
+            Spacer().frame(width: CGFloat(32.0))
+            VStack {
+                ForEach(exps, id: \.self) { exp in
+                    VStack {
+                        Spacer().frame(height: 16.0)
+                        Text(exp.date)
+                        Spacer().frame(height: 8.0)
+                        HStack {
+                            Text(exp.description).font(.system(size: 12))
+                            Spacer()
                         }
-
+                        Spacer().frame(height: 16.0)
                     }
+                    
                 }
             }
-            Spacer().frame(height: 16)
-            Rectangle().frame(width: UIScreen.main.bounds.size.width - 32, height: CGFloat(1.0)).foregroundColor(Color(.sRGB, white: 0, opacity: 0.3))
+            Spacer().frame(height: 32.0)
             
         }
-
+        
     }
 }
 
