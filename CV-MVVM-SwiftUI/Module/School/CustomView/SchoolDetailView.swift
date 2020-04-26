@@ -29,6 +29,7 @@ struct SchoolDetailView: View {
                 Text(text).font(.system(size: 12))
                 Spacer()
             }
+            Spacer().frame(height: 32.0)
         }
     }
 }

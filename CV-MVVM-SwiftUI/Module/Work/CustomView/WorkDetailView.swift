@@ -25,6 +25,7 @@ struct WorkDetailView: View {
             Text(date)
             Spacer().frame(height: 16.0)
             Text(text).font(.system(size: 12))
+            Spacer().frame(height: 32.0)
         }
     }
 }

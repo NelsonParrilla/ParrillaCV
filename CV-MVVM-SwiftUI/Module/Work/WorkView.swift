@@ -15,12 +15,13 @@ struct WorkView: View {
     var body: some View {
         
         List {
-            
+
             VStack {
+                Spacer().frame(height: 32.0)
+
                 ForEach(viewModel.CVDatas.professionalExp, id: \.self) { exp in
                     VStack {
                         WorkDetailView(date: exp.date, text: exp.description, imageURLString: exp.image)
-                        Spacer().frame(height: 32.0)
                     }
 
                 }

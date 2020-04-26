@@ -16,16 +16,12 @@ struct SchoolView: View {
         
         List {
             VStack {
+                Spacer().frame(height: 32.0)
                 SchoolDetailView(date: "2015", text: NSLocalizedString("school_2015_polytech", comment: ""), imageName: "polytech")
-                Spacer().frame(height: 32.0)
                 SchoolDetailView(date: "2015", text: NSLocalizedString("school_2015_dessiin", comment: ""), imageName: "ecole_design")
-                Spacer().frame(height: 32.0)
                 SchoolDetailView(date: "2012", text: NSLocalizedString("school_2012", comment: ""), imageName: "iut")
-                Spacer().frame(height: 32.0)
                 SchoolDetailView(date: "2010", text: NSLocalizedString("school_2010", comment: ""), imageName: "benjam")
-                Spacer().frame(height: 32.0)
                 SchoolDetailView(date: "2008", text: NSLocalizedString("school_2008", comment: ""), imageName: "benjam")
-                Spacer().frame(height: 32.0)
             }
             
         }

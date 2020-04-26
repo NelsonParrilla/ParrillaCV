@@ -18,7 +18,6 @@ struct SocialDetailView: View {
     
     var body: some View {
         VStack {
-            
             HStack {
                 VStack {
                     Text(title).multilineTextAlignment(.center).fixedSize()

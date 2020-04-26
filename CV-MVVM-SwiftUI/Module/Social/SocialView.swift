@@ -17,6 +17,7 @@ struct SocialView: View {
         List {
             
             VStack {
+                Spacer().frame(height: 32.0)
                 SocialDetailView(title: NSLocalizedString("social_associative_title", comment: "Vie associative"),
                                  imageName: "team",
                                  exps:viewModel.CVDatas.associative)
