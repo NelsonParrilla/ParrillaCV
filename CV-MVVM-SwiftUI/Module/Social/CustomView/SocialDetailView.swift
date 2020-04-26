@@ -26,7 +26,6 @@ struct SocialDetailView: View {
                 .frame(width: CGFloat(50.0), height: CGFloat(50.0))
                 .foregroundColor(Color("Green"))
             
-            Spacer().frame(width: CGFloat(32.0))
             VStack {
                 ForEach(exps, id: \.self) { exp in
                     VStack {
