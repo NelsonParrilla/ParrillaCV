@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct CV: Codable {
+struct CV: Codable, Equatable {
     let image: String
     let role: String
     let adresse: String
