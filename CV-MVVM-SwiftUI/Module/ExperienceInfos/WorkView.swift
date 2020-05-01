@@ -21,7 +21,7 @@ struct WorkView: View {
 
                 ForEach(viewModel.CVDatas.professionalExp, id: \.self) { exp in
                     VStack {
-                        WorkDetailView(exp: exp)
+                        ExpDetailView(exp: exp)
                     }
 
                 }

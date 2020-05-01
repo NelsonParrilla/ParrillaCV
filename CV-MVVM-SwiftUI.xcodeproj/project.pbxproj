@@ -38,9 +38,7 @@
 		BB7DAED60DD15F5FE13BF173 /* Pods_CV_MVVM_SwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 850775D1E2D9E3E02DC05E4F /* Pods_CV_MVVM_SwiftUITests.framework */; };
 		C506A44124436E3A00FF5D50 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506A44024436E3A00FF5D50 /* TabBarView.swift */; };
 		C506A44324436F0F00FF5D50 /* MainViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506A44224436F0F00FF5D50 /* MainViewState.swift */; };
-		C5087CC4244C661100FA586E /* SchoolDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5087CC3244C661100FA586E /* SchoolDetailView.swift */; };
 		C5087CCC244C7A6D00FA586E /* SocialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5087CCB244C7A6D00FA586E /* SocialView.swift */; };
-		C5087CCF244C840100FA586E /* SocialDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5087CCE244C840100FA586E /* SocialDetailView.swift */; };
 		C53EB71E2455E11500E3CF54 /* MainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53EB71D2455E11500E3CF54 /* MainTests.swift */; };
 		C53EB7212455E18E00E3CF54 /* MainServerAPIClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53EB7202455E18E00E3CF54 /* MainServerAPIClientMock.swift */; };
 		C53EB7232455E2C200E3CF54 /* MainFactoryInterfaceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53EB7222455E2C200E3CF54 /* MainFactoryInterfaceMock.swift */; };
@@ -54,7 +52,7 @@
 		C5B57EBB2455F2C600DB6DEB /* MainTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B57EBA2455F2C600DB6DEB /* MainTestCase.swift */; };
 		C5CCC7D224449A66004AD2B2 /* ExperienceInfosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CCC7D124449A66004AD2B2 /* ExperienceInfosView.swift */; };
 		C5F57420244483C50000B822 /* WorkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F5741F244483C50000B822 /* WorkView.swift */; };
-		C5F57424244486980000B822 /* WorkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F57423244486980000B822 /* WorkDetailView.swift */; };
+		C5F57424244486980000B822 /* ExpDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F57423244486980000B822 /* ExpDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,10 +115,8 @@
 		B7F974AA24158DAC001B1A5A /* CV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CV.swift; sourceTree = "<group>"; };
 		C506A44024436E3A00FF5D50 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		C506A44224436F0F00FF5D50 /* MainViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewState.swift; sourceTree = "<group>"; };
-		C5087CC3244C661100FA586E /* SchoolDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailView.swift; sourceTree = "<group>"; };
 		C5087CC9244C673500FA586E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C5087CCB244C7A6D00FA586E /* SocialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialView.swift; sourceTree = "<group>"; };
-		C5087CCE244C840100FA586E /* SocialDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialDetailView.swift; sourceTree = "<group>"; };
 		C53EB71D2455E11500E3CF54 /* MainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTests.swift; sourceTree = "<group>"; };
 		C53EB7202455E18E00E3CF54 /* MainServerAPIClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainServerAPIClientMock.swift; sourceTree = "<group>"; };
 		C53EB7222455E2C200E3CF54 /* MainFactoryInterfaceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFactoryInterfaceMock.swift; sourceTree = "<group>"; };
@@ -133,7 +129,7 @@
 		C5B57EBA2455F2C600DB6DEB /* MainTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTestCase.swift; sourceTree = "<group>"; };
 		C5CCC7D124449A66004AD2B2 /* ExperienceInfosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceInfosView.swift; sourceTree = "<group>"; };
 		C5F5741F244483C50000B822 /* WorkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkView.swift; sourceTree = "<group>"; };
-		C5F57423244486980000B822 /* WorkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkDetailView.swift; sourceTree = "<group>"; };
+		C5F57423244486980000B822 /* ExpDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpDetailView.swift; sourceTree = "<group>"; };
 		D3E5EACCFF187170C1882920 /* Pods_CV_MVVM_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CV_MVVM_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8605485BF5F73477AD5E81E /* Pods-CV-MVVM-SwiftUI-CV-MVVM-SwiftUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CV-MVVM-SwiftUI-CV-MVVM-SwiftUIUITests.release.xcconfig"; path = "Target Support Files/Pods-CV-MVVM-SwiftUI-CV-MVVM-SwiftUIUITests/Pods-CV-MVVM-SwiftUI-CV-MVVM-SwiftUIUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -276,9 +272,6 @@
 		B7873FA42412CFF500E8F87D /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				C5087CCA244C7A4E00FA586E /* Social */,
-				C5F5741E244483AF0000B822 /* Work */,
-				C5B1B128244C505200175810 /* School */,
 				C56B9A06244341FA0005FB03 /* PersonnalInfos */,
 				B7F974B424158F05001B1A5A /* Main */,
 				C5CCC7D024449A3F004AD2B2 /* ExperienceInfos */,
@@ -331,6 +324,7 @@
 		B7873FB72412CFF600E8F87D /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C5F57423244486980000B822 /* ExpDetailView.swift */,
 				C506A44024436E3A00FF5D50 /* TabBarView.swift */,
 				B7873FBB2412CFF600E8F87D /* AnyGestureRecognizer.swift */,
 				B7873FBA2412CFF600E8F87D /* HostingViewController.swift */,
@@ -368,31 +362,6 @@
 				B789CE93243505DC007F6E49 /* ProfessionalExp.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		C5087CC2244C65FE00FA586E /* CustomView */ = {
-			isa = PBXGroup;
-			children = (
-				C5087CC3244C661100FA586E /* SchoolDetailView.swift */,
-			);
-			path = CustomView;
-			sourceTree = "<group>";
-		};
-		C5087CCA244C7A4E00FA586E /* Social */ = {
-			isa = PBXGroup;
-			children = (
-				C5087CCB244C7A6D00FA586E /* SocialView.swift */,
-				C5087CCD244C83E200FA586E /* CustomView */,
-			);
-			path = Social;
-			sourceTree = "<group>";
-		};
-		C5087CCD244C83E200FA586E /* CustomView */ = {
-			isa = PBXGroup;
-			children = (
-				C5087CCE244C840100FA586E /* SocialDetailView.swift */,
-			);
-			path = CustomView;
 			sourceTree = "<group>";
 		};
 		C53EB71B2455E07100E3CF54 /* Module */ = {
@@ -462,44 +431,21 @@
 			path = PersonnalInfos;
 			sourceTree = "<group>";
 		};
-		C5B1B128244C505200175810 /* School */ = {
-			isa = PBXGroup;
-			children = (
-				C5B1B129244C506D00175810 /* SchoolView.swift */,
-				C5087CC2244C65FE00FA586E /* CustomView */,
-			);
-			path = School;
-			sourceTree = "<group>";
-		};
 		C5CCC7D024449A3F004AD2B2 /* ExperienceInfos */ = {
 			isa = PBXGroup;
 			children = (
 				C5CCC7D124449A66004AD2B2 /* ExperienceInfosView.swift */,
+				C5B1B129244C506D00175810 /* SchoolView.swift */,
+				C5F5741F244483C50000B822 /* WorkView.swift */,
+				C5087CCB244C7A6D00FA586E /* SocialView.swift */,
 			);
 			path = ExperienceInfos;
-			sourceTree = "<group>";
-		};
-		C5F5741E244483AF0000B822 /* Work */ = {
-			isa = PBXGroup;
-			children = (
-				C5F5741F244483C50000B822 /* WorkView.swift */,
-				C5F57422244486760000B822 /* CustomView */,
-			);
-			path = Work;
 			sourceTree = "<group>";
 		};
 		C5F574212444865D0000B822 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
 				B75FFCC8243CECDD004EB6CE /* SkillView.swift */,
-			);
-			path = CustomView;
-			sourceTree = "<group>";
-		};
-		C5F57422244486760000B822 /* CustomView */ = {
-			isa = PBXGroup;
-			children = (
-				C5F57423244486980000B822 /* WorkDetailView.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -745,11 +691,9 @@
 				B78A33802430D33500628682 /* MainFactory.swift in Sources */,
 				C506A44324436F0F00FF5D50 /* MainViewState.swift in Sources */,
 				B7873FDA2412CFF600E8F87D /* Location.swift in Sources */,
-				C5087CCF244C840100FA586E /* SocialDetailView.swift in Sources */,
 				C5B1B12A244C506D00175810 /* SchoolView.swift in Sources */,
 				B7873FC92412CFF600E8F87D /* MainViewModel.swift in Sources */,
 				C56B9A082443420B0005FB03 /* PersonnalInfosView.swift in Sources */,
-				C5087CC4244C661100FA586E /* SchoolDetailView.swift in Sources */,
 				B7873FD92412CFF600E8F87D /* AppDelegate.swift in Sources */,
 				B7205165243A4B9500ABE160 /* ImageView.swift in Sources */,
 				C5F57420244483C50000B822 /* WorkView.swift in Sources */,
@@ -759,7 +703,7 @@
 				B7205167243A4BB200ABE160 /* ImageLoader.swift in Sources */,
 				B7873FC72412CFF600E8F87D /* MainServerAPIClient.swift in Sources */,
 				B7873FDD2412CFF600E8F87D /* SceneDelegate.swift in Sources */,
-				C5F57424244486980000B822 /* WorkDetailView.swift in Sources */,
+				C5F57424244486980000B822 /* ExpDetailView.swift in Sources */,
 				B789CE92243505A1007F6E49 /* Skill.swift in Sources */,
 				C506A44124436E3A00FF5D50 /* TabBarView.swift in Sources */,
 				C5087CCC244C7A6D00FA586E /* SocialView.swift in Sources */,
