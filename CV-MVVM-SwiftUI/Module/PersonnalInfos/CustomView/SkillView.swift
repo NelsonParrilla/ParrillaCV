@@ -21,7 +21,7 @@ struct SkillView: View {
             Spacer()
                 .frame(height: 0.0)
             Slider(value: .constant(value))
-                .padding(.horizontal, 50.0)
+                .padding(.horizontal, 32.0)
         }
     }
 }

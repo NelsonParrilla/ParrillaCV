@@ -43,27 +43,32 @@ struct PersonnalInfosView: View {
             VStack(alignment: .leading) {
                 
                 HStack {
+                    Spacer().frame(width: 32)
                     Image("phone").resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 20.0, height: 20.0)
                     Text(viewModel.CVDatas.phone).font(.system(size: 12))
+                    Spacer()
                 }
                 
                 HStack {
+                    Spacer().frame(width: 32)
                     Image("mail").resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 20.0, height: 20.0)
                     Text(viewModel.CVDatas.email).font(.system(size: 12))
+                    Spacer()
                 }
                 
                 HStack {
+                    Spacer().frame(width: 32)
                     Image("home").resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 20.0, height: 20.0)
                     Text(viewModel.CVDatas.adresse).font(.system(size: 12))
+                    Spacer()
                 }.fixedSize()
             }
-            .padding(.leading, -110.0)
             
             ForEach(viewModel.CVDatas.skills, id: \.self) { skill in
                 VStack {
@@ -74,6 +79,7 @@ struct PersonnalInfosView: View {
                 }
                 
             }
+            Spacer()
         }.navigationBarItems(trailing: nextButton)
     }
 }
