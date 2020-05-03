@@ -83,7 +83,7 @@
 		B7205164243A4B9500ABE160 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		B7205166243A4BB200ABE160 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		B75FFCC8243CECDD004EB6CE /* SkillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillView.swift; sourceTree = "<group>"; };
-		B7873F692412CF9100E8F87D /* Nelson Parrilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nelson Parrilla.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7873F692412CF9100E8F87D /* CV-MVVM-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CV-MVVM-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7873F7F2412CF9300E8F87D /* CV-MVVM-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CV-MVVM-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7873F852412CF9300E8F87D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7873F8A2412CF9300E8F87D /* CV-MVVM-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CV-MVVM-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -210,7 +210,7 @@
 		B7873F6A2412CF9100E8F87D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B7873F692412CF9100E8F87D /* Nelson Parrilla.app */,
+				B7873F692412CF9100E8F87D /* CV-MVVM-SwiftUI.app */,
 				B7873F7F2412CF9300E8F87D /* CV-MVVM-SwiftUITests.xctest */,
 				B7873F8A2412CF9300E8F87D /* CV-MVVM-SwiftUIUITests.xctest */,
 			);
@@ -471,7 +471,7 @@
 				C5B1B126244C4DB000175810 /* SwiftUIX */,
 			);
 			productName = "MVVM-SwiftUI";
-			productReference = B7873F692412CF9100E8F87D /* Nelson Parrilla.app */;
+			productReference = B7873F692412CF9100E8F87D /* CV-MVVM-SwiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B7873F7E2412CF9300E8F87D /* CV-MVVM-SwiftUITests */ = {
@@ -901,9 +901,9 @@
 				);
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "nelpar.CV-MVVM-SwiftUI";
-				PRODUCT_NAME = "Nelson Parrilla";
+				PRODUCT_NAME = "CV-MVVM-SwiftUI";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -923,9 +923,9 @@
 				);
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "nelpar.CV-MVVM-SwiftUI";
-				PRODUCT_NAME = "Nelson Parrilla";
+				PRODUCT_NAME = "CV-MVVM-SwiftUI";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
