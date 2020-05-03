@@ -32,7 +32,7 @@
 		B7873FE12412D0F900E8F87D /* Serializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7873FE02412D0F900E8F87D /* Serializable.swift */; };
 		B7873FE82412D7CF00E8F87D /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7873FE72412D7CF00E8F87D /* ColorPalette.swift */; };
 		B789CE92243505A1007F6E49 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = B789CE91243505A1007F6E49 /* Skill.swift */; };
-		B789CE94243505DC007F6E49 /* ProfessionalExp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B789CE93243505DC007F6E49 /* ProfessionalExp.swift */; };
+		B789CE94243505DC007F6E49 /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = B789CE93243505DC007F6E49 /* Experience.swift */; };
 		B78A33802430D33500628682 /* MainFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A337F2430D33500628682 /* MainFactory.swift */; };
 		B7F974AB24158DAC001B1A5A /* CV.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F974AA24158DAC001B1A5A /* CV.swift */; };
 		BB7DAED60DD15F5FE13BF173 /* Pods_CV_MVVM_SwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 850775D1E2D9E3E02DC05E4F /* Pods_CV_MVVM_SwiftUITests.framework */; };
@@ -110,7 +110,7 @@
 		B7873FE02412D0F900E8F87D /* Serializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serializable.swift; sourceTree = "<group>"; };
 		B7873FE72412D7CF00E8F87D /* ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		B789CE91243505A1007F6E49 /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
-		B789CE93243505DC007F6E49 /* ProfessionalExp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalExp.swift; sourceTree = "<group>"; };
+		B789CE93243505DC007F6E49 /* Experience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
 		B78A337F2430D33500628682 /* MainFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFactory.swift; sourceTree = "<group>"; };
 		B7F974AA24158DAC001B1A5A /* CV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CV.swift; sourceTree = "<group>"; };
 		C506A44024436E3A00FF5D50 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
@@ -324,6 +324,7 @@
 		B7873FB72412CFF600E8F87D /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B789CE93243505DC007F6E49 /* Experience.swift */,
 				C5F57423244486980000B822 /* ExpDetailView.swift */,
 				C506A44024436E3A00FF5D50 /* TabBarView.swift */,
 				B7873FBB2412CFF600E8F87D /* AnyGestureRecognizer.swift */,
@@ -359,7 +360,6 @@
 			children = (
 				B7F974AA24158DAC001B1A5A /* CV.swift */,
 				B789CE91243505A1007F6E49 /* Skill.swift */,
-				B789CE93243505DC007F6E49 /* ProfessionalExp.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -685,7 +685,7 @@
 				B7873FD42412CFF600E8F87D /* HostingViewController.swift in Sources */,
 				B7873FD02412CFF600E8F87D /* DependencyContainer.swift in Sources */,
 				B7873FD52412CFF600E8F87D /* AnyGestureRecognizer.swift in Sources */,
-				B789CE94243505DC007F6E49 /* ProfessionalExp.swift in Sources */,
+				B789CE94243505DC007F6E49 /* Experience.swift in Sources */,
 				C53EB7252455E87300E3CF54 /* FeatureFlags.swift in Sources */,
 				B7F974AB24158DAC001B1A5A /* CV.swift in Sources */,
 				B78A33802430D33500628682 /* MainFactory.swift in Sources */,
