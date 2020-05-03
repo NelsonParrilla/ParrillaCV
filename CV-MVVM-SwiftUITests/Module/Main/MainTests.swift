@@ -25,10 +25,10 @@ final class MainTests: XCTestCase {
     
     func testGetCV() {
         // Given
-        let respExp = ProfessionalExp(title: "titleResp", image: "", exp: [])
+        let respExp = Experience(title: "titleResp", image: "", exp: [])
         let responseCV = CV(image: "test.png", role: "dev", adresse: "home", phone: "0289839401", email: "nelson.test@gmail.com", skills: [Skill(techno: "C++", value: 80)], professionalExp: [respExp], associative: respExp, sport: respExp, languages: respExp, projects: respExp)
         serverAPIClientMock.response = .success(responseCV)
-        let originalExp = ProfessionalExp(title: "originalResp", image: "", exp: [])
+        let originalExp = Experience(title: "originalResp", image: "", exp: [])
         let originalCV =  CV(image: "tsldqsdq.png", role: "bank", adresse: "67 rue du pain", phone: "0989372839", email: "test@gmail.com", skills: [Skill(techno: "C--", value: 60)], professionalExp: [originalExp], associative: originalExp, sport: originalExp, languages: originalExp, projects: originalExp)
         sut.CVDatas = originalCV
         
@@ -43,7 +43,7 @@ final class MainTests: XCTestCase {
     func testGetCVError() {
         // Given
         serverAPIClientMock.response = .failure(NSError(domain: "CV", code: 1, userInfo: [:]))
-        let originalExp = ProfessionalExp(title: "originalResp", image: "", exp: [])
+        let originalExp = Experience(title: "originalResp", image: "", exp: [])
         let originalCV =  CV(image: "tsldqsdq.png", role: "bank", adresse: "67 rue du pain", phone: "0989372839", email: "test@gmail.com", skills: [Skill(techno: "C--", value: 60)], professionalExp: [originalExp], associative: originalExp, sport: originalExp, languages: originalExp, projects: originalExp)
         sut.CVDatas = originalCV
         
