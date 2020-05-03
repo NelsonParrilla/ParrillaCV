@@ -40,8 +40,7 @@ struct ExpDetailView: View {
                             Text(exp.description).font(.system(size: 12))
                             Spacer()
                         }
-                        Spacer().frame(height: 16.0)
-                    }
+                    }.padding(.horizontal, 16.0)
                     
                 }
             }
