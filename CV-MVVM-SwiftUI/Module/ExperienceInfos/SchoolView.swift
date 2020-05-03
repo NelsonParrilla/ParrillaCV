@@ -17,26 +17,26 @@ struct SchoolView: View {
         List {
             VStack {
                 Spacer().frame(height: 32.0)
-                ExpDetailView(exp: ProfessionalExp(title: NSLocalizedString("school_polytech", comment: "Polytech Nantes"),
+                ExpDetailView(exp: Experience(title: NSLocalizedString("school_polytech", comment: "Polytech Nantes"),
                                                     image: "polytech",
-                                                    exp: [ProfessionalExpDetail(date: "2015",
+                                                    exp: [ExperienceDetail(date: "2015",
                                                                                 description: NSLocalizedString("school_2015_polytech",
                                                                                                                comment: ""))]))
-                ExpDetailView(exp: ProfessionalExp(title: NSLocalizedString("school_design", comment: "Ecole de design de Nantes"),
+                ExpDetailView(exp: Experience(title: NSLocalizedString("school_design", comment: "Ecole de design de Nantes"),
                                                     image: "ecole_design",
-                                                    exp: [ProfessionalExpDetail(date: "2015",
+                                                    exp: [ExperienceDetail(date: "2015",
                                                                                 description: NSLocalizedString("school_2015_dessiin", comment: ""))]))
-                ExpDetailView(exp: ProfessionalExp(title: NSLocalizedString("school_iut", comment: "I.U.T. de Tours"),
+                ExpDetailView(exp: Experience(title: NSLocalizedString("school_iut", comment: "I.U.T. de Tours"),
                                                     image: "iut",
-                                                    exp: [ProfessionalExpDetail(date: "2012",
+                                                    exp: [ExperienceDetail(date: "2012",
                                                                                 description: NSLocalizedString("school_2012", comment: ""))]))
-                ExpDetailView(exp: ProfessionalExp(title: NSLocalizedString("school_benjam", comment: "Lycée Benjamin Franklin - Orléans"),
+                ExpDetailView(exp: Experience(title: NSLocalizedString("school_benjam", comment: "Lycée Benjamin Franklin - Orléans"),
                                                     image: "benjam",
-                                                    exp: [ProfessionalExpDetail(date: "2010",
+                                                    exp: [ExperienceDetail(date: "2010",
                                                                                 description: NSLocalizedString("school_2010", comment: ""))]))
-                ExpDetailView(exp: ProfessionalExp(title: NSLocalizedString("school_benjam", comment: "Lycée Benjamin Franklin - Orléans"),
+                ExpDetailView(exp: Experience(title: NSLocalizedString("school_benjam", comment: "Lycée Benjamin Franklin - Orléans"),
                                                     image: "benjam",
-                                                    exp: [ProfessionalExpDetail(date: "2008",
+                                                    exp: [ExperienceDetail(date: "2008",
                                                                                 description: NSLocalizedString("school_2008", comment: ""))]))
             }
             

@@ -15,9 +15,9 @@ struct CV: Codable, Equatable {
     let phone: String
     let email: String
     let skills: [Skill]
-    let professionalExp: [ProfessionalExp]
-    let associative: ProfessionalExp
-    let sport: ProfessionalExp
-    let languages: ProfessionalExp
-    let projects: ProfessionalExp
+    let professionalExp: [Experience]
+    let associative: Experience
+    let sport: Experience
+    let languages: Experience
+    let projects: Experience
 }

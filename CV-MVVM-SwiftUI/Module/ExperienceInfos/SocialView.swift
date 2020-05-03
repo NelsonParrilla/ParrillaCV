@@ -18,10 +18,10 @@ struct SocialView: View {
             
             VStack {
                 Spacer().frame(height: 32.0)
-                ExpDetailView(exp: ProfessionalExp(title: NSLocalizedString("social_associative_title", comment: "Vie associative"), image: "team", exp: viewModel.CVDatas.associative.exp))
-                ExpDetailView(exp: ProfessionalExp(title: NSLocalizedString("social_sport_title", comment: "Sport"), image: "soccer", exp: viewModel.CVDatas.sport.exp))
-                ExpDetailView(exp: ProfessionalExp(title: NSLocalizedString("social_languages_title", comment: "Langues"), image: "earth", exp: viewModel.CVDatas.languages.exp))
-                ExpDetailView(exp: ProfessionalExp(title: NSLocalizedString("social_projects_title", comment: "Projets"), image: "light-bulb", exp: viewModel.CVDatas.projects.exp))
+                ExpDetailView(exp: Experience(title: NSLocalizedString("social_associative_title", comment: "Vie associative"), image: "team", exp: viewModel.CVDatas.associative.exp))
+                ExpDetailView(exp: Experience(title: NSLocalizedString("social_sport_title", comment: "Sport"), image: "soccer", exp: viewModel.CVDatas.sport.exp))
+                ExpDetailView(exp: Experience(title: NSLocalizedString("social_languages_title", comment: "Langues"), image: "earth", exp: viewModel.CVDatas.languages.exp))
+                ExpDetailView(exp: Experience(title: NSLocalizedString("social_projects_title", comment: "Projets"), image: "light-bulb", exp: viewModel.CVDatas.projects.exp))
             }
             
         }

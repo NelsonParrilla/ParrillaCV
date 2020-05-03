@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ExpDetailView: View {
     
-    var exp: ProfessionalExp
+    var exp: Experience
     
     var body: some View {
         VStack {
@@ -56,6 +56,6 @@ struct ExpDetailView_Previews: PreviewProvider {
     
     static var previews: some View {
         
-        return ExpDetailView(exp: ProfessionalExp(title: "Work", image: "", exp: [ProfessionalExpDetail(date: "2018/2019", description: "Experience 1")]))
+        return ExpDetailView(exp: Experience(title: "Work", image: "", exp: [ExperienceDetail(date: "2018/2019", description: "Experience 1")]))
     }
 }

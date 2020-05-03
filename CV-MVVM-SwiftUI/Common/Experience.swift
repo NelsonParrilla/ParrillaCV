@@ -1,5 +1,5 @@
 //
-//  ProfessionnalExp.swift
+//  Experience.swift
 //  CV-MVVM-SwiftUI
 //
 //  Created by Nelson Parrilla on 01/04/2020.
@@ -8,13 +8,13 @@
 
 import Foundation
 
-struct ProfessionalExp: Codable, Hashable {
+struct Experience: Codable, Hashable {
     let title: String
     let image: String?
-    let exp: [ProfessionalExpDetail]
+    let exp: [ExperienceDetail]
 }
 
-struct ProfessionalExpDetail: Codable, Hashable {
+struct ExperienceDetail: Codable, Hashable {
     let date: String
     let description: String
 }
