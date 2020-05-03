@@ -10,6 +10,10 @@ import Foundation
 
 protocol MainFactoryInterface {
     
+    /**
+    * Make Server API
+    * @return the Server API Client used to call web services for Main Module
+    */
     func makeServerAPI() -> MainServerAPIClient
 }
 

@@ -11,8 +11,14 @@ import SwiftUI
 
 protocol MainViewModelInterface {
     
+    /**
+    *  Get CV datas
+    */
     func getCV()
     
+    /**
+    *  Show experience infos screen
+    */
     func displayExperienceInfosView()
 }
 
