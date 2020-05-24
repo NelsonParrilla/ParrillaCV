@@ -16,15 +16,25 @@ struct ExperienceInfosView: View {
         
         VStack {
             ZStack {
-                WorkView(viewModel: viewModel).hidden(viewModel.state != .work)
-                SchoolView(viewModel: viewModel).hidden(viewModel.state != .school)
-                SocialView(viewModel: viewModel).hidden(viewModel.state != .social)
+                containedView()
             }
             TabBarView(state: $viewModel.state)
         }.navigationBarTitle(Text(viewModel.state.navBarTitle), displayMode: .inline)
         
     }
     
+    func containedView() -> some View {
+        switch viewModel.state {
+        case .work:
+            return AnyView(WorkView(viewModel: viewModel)).id("WorkView")
+        case .school:
+            return AnyView(SchoolView(viewModel: viewModel)).id("SchoolView")
+        case .social:
+            return AnyView(SocialView(viewModel: viewModel)).id("SocialView")
+        case .personnalInfos:
+            return AnyView(EmptyView()).id("EmptyView")
+        }
+    }
 }
 
 struct ExperienceInfosView_Previews: PreviewProvider {
