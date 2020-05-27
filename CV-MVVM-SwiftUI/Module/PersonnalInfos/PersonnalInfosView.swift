@@ -80,7 +80,8 @@ struct PersonnalInfosView: View {
                 
             }
             Spacer()
-        }.navigationBarItems(trailing: nextButton)
+        }.navigationBarItems(trailing:         nextButton.accessibility(identifier: "nextButton")
+)
     }
 }
 

@@ -6,7 +6,7 @@
 //  Copyright © 2020 parrilla nelson. All rights reserved.
 //
 
-import SwiftUIX
+import SwiftUI
 
 struct MainView: View {
     
@@ -24,15 +24,18 @@ struct MainView: View {
                 
                 Color("MediumBlue").edgesIgnoringSafeArea(.all)
                 
-                VStack {
-                    Spacer()
-                        .frame(height: 128.0)
-                    PersonnalInfosView(viewModel: viewModel)
+                if ((viewModel.isDataLoaded) && (viewModel.state == .personnalInfos)) {
+                    VStack {
+                        Spacer()
+                            .frame(height: 128.0)
+                        PersonnalInfosView(viewModel: viewModel)
+                    }
+                        .edgesIgnoringSafeArea([.top, .bottom])
                 }
-                    .edgesIgnoringSafeArea([.top, .bottom])
-                .hidden((!viewModel.isDataLoaded) || (viewModel.state != .personnalInfos))
-
-            }
+            }.onAppear(perform: {
+                self.viewModel.isDataLoaded = true
+                self.viewModel.state = .personnalInfos
+            })
         }
         
     }

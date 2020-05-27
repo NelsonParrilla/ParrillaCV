@@ -19,7 +19,7 @@ class MainTestCase: SnapshotTestCase {
     }
     
     func displayWorkScreenFromPersonnalInfosScreen() {
-        app.navigationBars["_TtGC7SwiftUI19UIHosting"].buttons["chevron.right"].tap()
+        app.navigationBars.buttons["nextButton"].tap()
         sleep(2)
     }
     
@@ -34,7 +34,7 @@ class MainTestCase: SnapshotTestCase {
     }
     
     func goBackFromWorkScreen() {
-        app.navigationBars["Expériences professionnelles"].buttons["chevron.left"].tap()
+        app.navigationBars["Expériences professionnelles"].buttons["Back"].tap()
         sleep(2)
     }
 
