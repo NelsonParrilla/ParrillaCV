@@ -25,7 +25,9 @@ struct TabBarView: View {
                 }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                 Spacer()
                     .frame(height: 0.0)
-                Rectangle().fill(Color("DarkBlue")).frame(height: CGFloat(5.0)).hidden(!(state == .work))
+                if state == .work {
+                    Rectangle().fill(Color("DarkBlue")).frame(height: CGFloat(5.0))
+                }
             }
             
             VStack {
@@ -36,7 +38,9 @@ struct TabBarView: View {
                 }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                 Spacer()
                     .frame(height: 0.0)
-                Rectangle().fill(Color("DarkBlue")).frame(height: CGFloat(5.0)).hidden(!(state == .school))
+                if state == .school {
+                    Rectangle().fill(Color("DarkBlue")).frame(height: CGFloat(5.0))
+                }
             }
             
             VStack {
@@ -47,15 +51,15 @@ struct TabBarView: View {
                 }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                 Spacer()
                     .frame(height: 0.0)
-                Rectangle().fill(Color("DarkBlue")).frame(height: CGFloat(5.0)).hidden(!(state == .social))
+                if state == .social {
+                    Rectangle().fill(Color("DarkBlue")).frame(height: CGFloat(5.0))
+                }
             }
             
         }
         .frame(height: 48.0)
         .background(Rectangle().fill(Color.white).shadow(radius: 8))
-        .hidden(state == .personnalInfos)
         
-
     }
 }
 

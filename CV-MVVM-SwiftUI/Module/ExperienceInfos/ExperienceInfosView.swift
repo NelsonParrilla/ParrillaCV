@@ -12,34 +12,29 @@ struct ExperienceInfosView: View {
     
     @ObservedObject var viewModel: MainViewModel
     
-    var backButton: some View {
-        Button(action: {
-            self.viewModel.state = .personnalInfos
-            self.viewModel.isExpInfosVisible = false
-        }) {
-            HStack(spacing: 4) {
-                Image(systemName: "chevron.left")
-            }
-            .foregroundColor(Color("DarkBlue"))
-        }
-        .frame(width: 20.0, height: 20.0)
-    }
-    
     var body: some View {
         
-            VStack {
-                ZStack {
-                    WorkView(viewModel: viewModel).hidden(viewModel.state != .work)
-                    SchoolView(viewModel: viewModel).hidden(viewModel.state != .school)
-                    SocialView(viewModel: viewModel).hidden(viewModel.state != .social)
-                }
-                TabBarView(state: $viewModel.state)
-            }.navigationBarTitle(Text(viewModel.state.navBarTitle), displayMode: .inline)
-        .navigationBarItems(leading: backButton)
-
+        VStack {
+            ZStack {
+                containedView()
+            }
+            TabBarView(state: $viewModel.state)
+        }.navigationBarTitle(Text(viewModel.state.navBarTitle), displayMode: .inline)
         
     }
     
+    func containedView() -> some View {
+        switch viewModel.state {
+        case .work:
+            return AnyView(WorkView(viewModel: viewModel)).id("WorkView")
+        case .school:
+            return AnyView(SchoolView(viewModel: viewModel)).id("SchoolView")
+        case .social:
+            return AnyView(SocialView(viewModel: viewModel)).id("SocialView")
+        case .personnalInfos:
+            return AnyView(EmptyView()).id("EmptyView")
+        }
+    }
 }
 
 struct ExperienceInfosView_Previews: PreviewProvider {
@@ -56,7 +51,7 @@ struct ExperienceInfosView_Previews: PreviewProvider {
                 viewModel.CVDatas = try decoder.decode(CV.self, from: data)
             } catch { fatalError("No getCVMock file") }
         }
-
+        
         return ExperienceInfosView(viewModel: viewModel)
     }
 }
