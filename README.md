@@ -1,6 +1,6 @@
 # CV MVVM SwiftUI
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![Version](https://img.shields.io/badge/version-1.0.1-blue.svg)
 ![Platforms](https://img.shields.io/badge/platform-iOS-blue.svg)
 ![Swift version](https://img.shields.io/badge/swift-5.0-blue.svg)
 
