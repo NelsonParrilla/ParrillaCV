@@ -32,7 +32,10 @@ struct MainView: View {
                     }
                         .edgesIgnoringSafeArea([.top, .bottom])
                 }
-            }
+            }.onAppear(perform: {
+                self.viewModel.isDataLoaded = true
+                self.viewModel.state = .personnalInfos
+            })
         }
         
     }
